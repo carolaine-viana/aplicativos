@@ -19,6 +19,14 @@
 * createBottomTabNavigator = biblioteca para navegacao das paginas (tabBar).
 * categories = arquivo JSON que contem o nome dos icones e suas cores.
 
+### FIGMA
+
+https://www.figma.com/file/Z33TSc9TdoStolUJAo1aa8/GoFinances-Ignite-(Copy)?node-id=0%3A1
+
+
+![Captura de Tela 2021-11-16 às 15 46 37](https://user-images.githubusercontent.com/65136543/142046670-9963055d-feab-4688-a5a3-a5aca908fb12.png)
+
+
 ---
 
 #### Telas:
