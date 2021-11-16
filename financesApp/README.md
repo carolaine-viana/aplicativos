@@ -1,8 +1,8 @@
-Aplicativo para controle financeiro.
+# Aplicativo para controle financeiro.
 
-Feito em: React native + typescript + expo Bareworkflow.
+## Feito em: React native + typescript + expo Bareworkflow.
 
-Bibiliotecas usadas: 
+#### Bibiliotecas usadas: 
 
 * Styled-components.
 * RFValue, RFPercentagem. biblioteca para aproveitamento do pixel em quais telas.
