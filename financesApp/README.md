@@ -1,1 +1,30 @@
-Teste
+Aplicativo para controle financeiro.
+
+Feito em: React native + typescript + expo Bareworkflow.
+
+Bibiliotecas usadas: 
+
+* Styled-components.
+* RFValue, RFPercentagem. biblioteca para aproveitamento do pixel em quais telas.
+* getStatusBarHeight, getBottomSpace. biblioteca para renderizacao melhor em dispositivos como iphone 10 acima.
+* Feather. biblioteca de icones do expo bare.
+* theme provider. para renderizar todas as cores do app, e manter em facil acesso. 
+* VictoryPie. biblioteca de gráficos para renderizar o gráfico das transacoes no app. 
+* date-fns. biblioteca para ajudar na logica das datas dentro do app.
+* Yup. biblioteca para ajudar a colocar regras no input do formulário na tela de cadastro do app.
+
+* AsyncStorage. para salvar os dados no dispositivo mesmo após fechamento.
+* DateTimeFormat. funcionalidade do JavaScript para formatar dados e valores númericos.
+* FlatList para renderizar a lista de transacoes da tela de listagem.
+* createBottomTabNavigator = biblioteca para navegacao das paginas (tabBar).
+* categories = arquivo JSON que contem o nome dos icones e suas cores.
+
+Telas:
+
+* Tela de listagem: contém todo os inputs feitos, e cards com os calculos da sua carteira financeira.
+
+![Captura de Tela 2021-11-16 às 15 31 32](https://user-images.githubusercontent.com/65136543/142044776-aef37aab-79e7-4dc3-b6f3-5933b7fd8415.png)
+
+* Tela: Cadastrar. contém um form para cadastrar novas transacoes financeiras.
+
+![Captura de Tela 2021-11-16 às 15 31 14](https://user-images.githubusercontent.com/65136543/142044854-5094db5b-f77d-404c-a4fc-bd532a2fcb72.png)
