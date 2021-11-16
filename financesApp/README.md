@@ -28,3 +28,9 @@ Telas:
 * Tela: Cadastrar. contém um form para cadastrar novas transacoes financeiras.
 
 ![Captura de Tela 2021-11-16 às 15 31 14](https://user-images.githubusercontent.com/65136543/142044854-5094db5b-f77d-404c-a4fc-bd532a2fcb72.png)
+
+* Tela: gráfico. contém um gráfico com o resultado do número de gastos em cada categoria.
+
+![Captura de Tela 2021-11-16 às 15 31 59](https://user-images.githubusercontent.com/65136543/142046295-1d5b7b28-e0f2-4b92-ad23-54aa7b0cf124.png)
+
+
