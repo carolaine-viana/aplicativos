@@ -19,7 +19,9 @@
 * createBottomTabNavigator = biblioteca para navegacao das paginas (tabBar).
 * categories = arquivo JSON que contem o nome dos icones e suas cores.
 
-Telas:
+---
+
+#### Telas:
 
 * Tela de listagem: contém todo os inputs feitos, e cards com os calculos da sua carteira financeira.
 
