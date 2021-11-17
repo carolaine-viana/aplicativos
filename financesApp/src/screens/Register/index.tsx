@@ -114,10 +114,6 @@ export function Register() {
     }
   }
 
-  async function handleRemove(id: string){
-
-  }
-
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <Container>

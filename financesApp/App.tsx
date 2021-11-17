@@ -10,6 +10,8 @@ import { StatusBar} from "react-native";
 import { AppRoutes } from "./src/components/Routes/app.routes";
 import { NavigationContainer } from "@react-navigation/native";
 
+import {AuthProvider} from './src/hooks/auth';
+
 import AppLoading from "expo-app-loading";
 import {
   useFonts, 
@@ -18,6 +20,7 @@ import {
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 import { SignIn } from "./src/screens/SignIn";
+
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -34,7 +37,9 @@ export default function App() {
     <ThemeProvider theme={theme}>
       <NavigationContainer>
         <StatusBar barStyle="light-content"/>
-        <SignIn/>
+        <AuthProvider>
+            <SignIn/>
+        </AuthProvider>
       </NavigationContainer>
    </ThemeProvider>
   ) 
