@@ -2,6 +2,7 @@
   "expo": {
     "name": "financesApp",
     "slug": "financesApp",
+    "scheme": "financesApp",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
