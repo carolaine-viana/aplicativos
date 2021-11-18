@@ -48,16 +48,11 @@ export function Dashboard() {
   const [transactions, settransactions] = useState<DataListProps[]>([]);
   const [HighlightData, setHighlightData] = useState<HighlightData>({} as HighlightData);
   
-  const dataKey = "@gofinance:transactions";
-  
   const theme = useTheme();
   const {signOut, user} = useAuth()
 
 
-  function getLastTransactionDate(
-    collection: DataListProps[],
-    type: "positive" | "negative"
-  ) {
+  function getLastTransactionDate(collection: DataListProps[], type: "positive" | "negative") {
     const lastTransaction = new Date(
       Math.max.apply(
         Math,
@@ -74,6 +69,7 @@ export function Dashboard() {
   }
 
   async function loadTransactions() {
+    const dataKey = `@gofinance:transactions_user:${user.id}`;
     const response = await AsyncStorage.getItem(dataKey);
     const transactions = response ? JSON.parse(response) : [];
     let entriesTotal = 0;
@@ -130,7 +126,6 @@ export function Dashboard() {
           currency: "BRL",
         }),
         lastTransaction: `${lastTransactionEntries !== 'NaN de Invalid Date' ? `Ultima entrada dia ` + lastTransactionEntries : `` }`,
-        //lastTransaction: `Ultima entrada dia ${lastTransactionEntries}`,
       },
       expensives: {
         amount: expensivesTotal.toLocaleString("pt-BR", {
@@ -138,7 +133,6 @@ export function Dashboard() {
           currency: "BRL",
         }),
         lastTransaction: `${lastTransactionExpensives !== 'NaN de Invalid Date' ? `Ultima saida dia ` + lastTransactionExpensives : `` }`,
-        //lastTransaction: `Ultima saida dia ${lastTransactionExpensives}`,
       },
       total: {
         amount: total.toLocaleString("pt-BR", {
@@ -146,7 +140,6 @@ export function Dashboard() {
           currency: "BRL",
         }),
         lastTransaction: `${totalInterval !== '01 a NaN de Invalid Date' ? totalInterval : `` }`,
-        //lastTransaction: totalInterval,
       },
     });
     setIsLoading(false);

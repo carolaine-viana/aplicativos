@@ -72,13 +72,6 @@ function AuthProvider({ children }: AuthProviderProps) {
 
         setUser(userLogged)
 
-        // setUser({
-        //   id: userInfo.id,
-        //   email: userInfo.email,
-        //   name: userInfo.given_name,
-        //   photo: userInfo.picture,
-        // });
-
         await AsyncStorage.setItem(userStorageKey, JSON.stringify(userLogged))
       }
     } catch (error: any) {
@@ -116,7 +109,6 @@ function AuthProvider({ children }: AuthProviderProps) {
     await AsyncStorage.removeItem(userStorageKey)
   }
 
-  //se o usuario estiver conectado...
   useEffect(() => {
     async function loadStorageDate() {
       const userStoraged = await AsyncStorage.getItem(userStorageKey);
@@ -126,7 +118,6 @@ function AuthProvider({ children }: AuthProviderProps) {
         const userLogged = JSON.parse(userStoraged) as User;
         setUser(userLogged);
       }
-
       setisLoading(false)
     }
 

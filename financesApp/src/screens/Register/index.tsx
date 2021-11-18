@@ -15,10 +15,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import uuid from "react-native-uuid";
 
-//navigation
 import { useNavigation } from "@react-navigation/native";
 
-//styles
 import {
   Container,
   Header,
@@ -27,6 +25,7 @@ import {
   Fields,
   TransactionsTypes,
 } from "./styles";
+import { useAuth } from "../../hooks/auth";
 
 interface FormData {
   name: string;
@@ -45,6 +44,8 @@ export function Register() {
   const [transactionType, settransactionType] = useState("");
   const [categoryModalOpen, setcategoryModalOpen] = useState(false);
   const navigation = useNavigation();
+
+  const {user} = useAuth();
 
   const [category, setcategory] = useState({
     key: "category",
@@ -88,17 +89,15 @@ export function Register() {
     };
 
     try {
-      const dataKey = "@gofinance:transactions";
+      const dataKey = `@gofinance:transactions_user:${user.id}`;
       const data = await AsyncStorage.getItem(dataKey);
       const currentData = data ? JSON.parse(data) : [];
 
       const dateFormatted = [...currentData, newTransaction];
 
-      //aqui cadastra
       await AsyncStorage.setItem(dataKey, JSON.stringify(dateFormatted));
-
-      //limpa os campos e reseta o obj pro estado inicial
-      reset(); //reset do yup
+      
+      reset();
       settransactionType("");
       setcategory({
         key: "category",
