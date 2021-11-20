@@ -1,6 +1,6 @@
-App de integracao com a conta da Twitch.
+## App de integracao com a conta da Twitch através da API.
 
-Feito em: RN + ExpoBare + typescript.
+### Feito em: RN + ExpoBare + typescript.
 
 
 Figma:
