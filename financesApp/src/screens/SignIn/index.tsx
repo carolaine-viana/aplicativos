@@ -66,24 +66,22 @@ export function SignIn(){
             </Header>
             <Footer>
                 <FooterWrapper>
-                    {
-                        Platform.OS === 'android' &&
+                  
                         <SignSocialButton
                             title="Entrar com Google"
                             svg={GoogleSvg}
                             onPress={handleSignInWithGoogle}
                         />
-                    }
-                    
-                    {
-                        Platform.OS === 'ios' &&
+                  
+           
+                   
                         <SignSocialButton
                             title="Entrar com Apple"
                             svg={AppSvg}
                             onPress={handleSignInWithApple}
                         />
 
-                    }
+                
                 </FooterWrapper>
                 {isLoading && <ActivityIndicator color={theme.colors.shape} style={{marginTop: 18}}/> }
             </Footer>

@@ -38,13 +38,19 @@ interface AuthorizationResponse {
   type: string;
 }
 
+// Endpoint
+const discovery = {
+  authorizationEndpoint: 'https://id.twitch.tv/oauth2/authorize',
+  tokenEndpoint: 'https://id.twitch.tv/oauth2/token',
+  revocationEndpoint: 'https://id.twitch.tv/oauth2/revoke',
+};
+
 export const AuthContext = createContext({} as AuthContextData);
 
 function AuthProvider({ children }: AuthProviderProps) {
   const [user, setUser] = useState<User>({} as User);
   const userStorageKey = "@gofinances:user";
   const [isLoading, setisLoading] = useState(true)
-
 
   async function signInWithGoogle() {
     try {
@@ -53,7 +59,9 @@ function AuthProvider({ children }: AuthProviderProps) {
 
       const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`;
 
-      const { type, params } = (await AuthSession.startAsync({
+      const { type, params } =
+      
+      (await AuthSession.startAsync({
         authUrl,
       })) as AuthorizationResponse;
 
@@ -61,6 +69,7 @@ function AuthProvider({ children }: AuthProviderProps) {
         const response = await fetch(
           `https://www.googleapis.com/oauth2/v1/userinfo?alt=json&access_token=${params.access_token}`
         );
+        
         const userInfo = await response.json();
 
         const userLogged = {
@@ -97,7 +106,7 @@ function AuthProvider({ children }: AuthProviderProps) {
         };
         setUser(userLogged as User);
 
-        await AsyncStorage.setItem(userStorageKey, JSON.stringify(userLogged)        );
+        await AsyncStorage.setItem(userStorageKey, JSON.stringify(userLogged));
       }
     } catch (error: any) {
       throw new Error(error);
