@@ -31,6 +31,11 @@ https://www.figma.com/file/Z33TSc9TdoStolUJAo1aa8/GoFinances-Ignite-(Copy)?node-
 
 #### Telas:
 
+* LOGIN social com google e apple.
+
+![Captura de Tela 2021-11-23 às 08 07 53](https://user-images.githubusercontent.com/65136543/143013784-d1f56d62-76a8-428e-aa53-023776fd610e.png)
+
+
 * Tela de listagem: contém todo os inputs feitos, e cards com os calculos da sua carteira financeira.
 
 ![Captura de Tela 2021-11-16 às 15 31 32](https://user-images.githubusercontent.com/65136543/142044776-aef37aab-79e7-4dc3-b6f3-5933b7fd8415.png)
