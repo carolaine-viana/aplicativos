@@ -15,6 +15,8 @@ import {
   Archivo_500Medium,
   Archivo_600SemiBold,
 } from "@expo-google-fonts/archivo";
+import { CarDetails } from './src/screens/CarDetails';
+import { Scheduling } from './src/screens/Scheduling';
 
 
 
@@ -33,7 +35,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Home/>
+      <Scheduling/>
     </ThemeProvider>
   );
 }
