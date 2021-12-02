@@ -16,10 +16,10 @@ import {
    Content,
    Footer
 } from './styles'; 
-import { Alert, StatusBar } from 'react-native';
+import { StatusBar } from 'react-native';
 import { Button } from '../../components/Button';
 import { Calendar, DayProps, generateInterval, MarkedDateProps} from '../../components/Calendar';
-import { RouteProp, useNavigation, useRoute } from '@react-navigation/core';
+import { useNavigation, useRoute } from '@react-navigation/core';
 import { getPlataformDate } from '../../utils/getPlataformDate';
 import { CarDTO } from '../../dtos/CarDTO';
 import { RootStackParamList } from '../../@types/navigation';
@@ -50,14 +50,10 @@ export function Scheduling({}: Props){
 
 
     function handleConfirmRental(){
-        if(!rentalPeriod.startFormatted || !rentalPeriod.endFormatted){
-            Alert.alert('selecione o intervalo para alugar.')
-        }else{
-            navigation.navigate('SchedulingDetails', {
-                car,
-                dates: Object.keys(markedDates)
-            });
-        }
+        navigation.navigate('SchedulingDetails', {
+            car,
+            dates: Object.keys(markedDates)
+        });
     }
 
     function handleBack(){
@@ -134,6 +130,7 @@ export function Scheduling({}: Props){
                    <Button
                         title="confirmar"
                         onPress={handleConfirmRental}
+                        enabled={!!rentalPeriod.startFormatted}
                    />
                </Footer>
 

@@ -14,7 +14,7 @@ export type RootStackParamList = {
   SchedulingComplete: {
     option: string;
   };
-  navigate: {
-    option: undefined;
+  MyCars: {
+    option: string;
   }
 };

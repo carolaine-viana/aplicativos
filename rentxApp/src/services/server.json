@@ -323,7 +323,123 @@
         "2022-01-05",
         "2022-01-01",
         "2022-01-02",
-        "2021-12-31"
+        "2021-12-31",
+        "2022-01-19",
+        "2022-01-20",
+        "2021-12-19",
+        "2021-12-20",
+        "2022-02-01",
+        "2022-02-02",
+        "2021-12-09",
+        "2021-12-10",
+        "2021-12-09",
+        "2021-12-10",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-10",
+        "2021-12-11",
+        "2022-04-14",
+        "2022-04-15",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-02",
+        "2021-12-03",
+        "2021-12-02",
+        "2021-12-03",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-14",
+        "2022-04-15",
+        "2022-04-14",
+        "2022-04-15",
+        "2022-04-14",
+        "2022-04-15",
+        "2022-04-14",
+        "2022-04-15",
+        "2022-04-22",
+        "2022-04-23",
+        "2022-04-22",
+        "2022-04-23",
+        "2022-04-24",
+        "2022-04-25",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-26",
+        "2022-04-27",
+        "2022-04-29",
+        "2022-04-30",
+        "2022-04-29",
+        "2022-04-30",
+        "2022-09-29",
+        "2022-09-30",
+        "2022-09-29",
+        "2022-09-30",
+        "2022-10-13",
+        "2022-10-14",
+        "2022-10-21",
+        "2022-10-22",
+        "2022-10-20",
+        "2022-10-21",
+        "2022-10-20",
+        "2022-10-21",
+        "2022-10-22",
+        "2022-10-23",
+        "2022-12-22",
+        "2022-12-23",
+        "2022-12-22",
+        "2022-12-23",
+        "2022-12-22",
+        "2022-12-23",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2022-12-17",
+        "2022-12-18",
+        "2023-03-30",
+        "2023-03-31",
+        "2022-11-02",
+        "2021-12-23",
+        "2021-12-24",
+        "2022-01-06",
+        "2022-01-06",
+        "2022-01-06",
+        "2022-01-06",
+        "2022-01-06",
+        "2021-12-10",
+        "2021-12-11"
       ]
     },
     {
@@ -339,7 +455,9 @@
         "2021-05-29",
         "2021-05-30",
         "2021-05-29",
-        "2021-05-30"
+        "2021-05-30",
+        "2021-12-09",
+        "2021-12-10"
       ]
     },
     {
@@ -359,7 +477,20 @@
         "2021-05-30",
         "2021-12-02",
         "2021-12-03",
-        "2021-12-04"
+        "2021-12-04",
+        "2021-12-30",
+        "2021-12-31",
+        "2022-01-01",
+        "2022-01-02",
+        "2022-01-03",
+        "2022-01-04",
+        "2022-01-05",
+        "2022-01-06",
+        "2022-01-07",
+        "2022-01-08",
+        "2022-01-09",
+        "2021-12-10",
+        "2021-12-11"
       ]
     },
     {
@@ -1662,6 +1793,3182 @@
       "startDate": "16/06/2021",
       "endDate": "18/06/2021",
       "id": 23
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "id": 24
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "id": 25
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
+        "brand": "Chevrolet",
+        "name": "Corvette Z06",
+        "about": "O Chevrolet Corvette Z06 inclui freios Brembo de alto desempenho com pinças maiores no conjunto dianteiro, itens aerodinâmicos com capô de fibra de carbono, suspensão para alto desempenho.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 620
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/3.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "330km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "6.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "900 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasoline"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/6.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/7.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/8.png"
+        ]
+      },
+      "id": 26
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
+        "brand": "Chevrolet",
+        "name": "Corvette Z06",
+        "about": "O Chevrolet Corvette Z06 inclui freios Brembo de alto desempenho com pinças maiores no conjunto dianteiro, itens aerodinâmicos com capô de fibra de carbono, suspensão para alto desempenho.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 620
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/3.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "330km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "6.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "900 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasoline"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/6.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/7.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/8.png"
+        ]
+      },
+      "id": 27
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "01/02/2022",
+      "endDate": "02/02/2022",
+      "id": 28
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "09/12/2021",
+      "endDate": "10/12/2021",
+      "id": 29
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "09/12/2021",
+      "endDate": "10/12/2021",
+      "id": 30
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "ffb71f55-818a-48b1-b7d2-2efc406ede25",
+        "brand": "Porsche",
+        "name": "Panamera",
+        "about": "O Panamera é um automóvel de luxo coupé com porte grande. Tem motorização dianteira V6 e V8. A tração é integral com uma caixa PDK de sete mudanças e dupla embreagem.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 340
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/2.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "315km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "2.9s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "700 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasoline"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "4 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/4.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/5.png"
+        ]
+      },
+      "startDate": "09/12/2021",
+      "endDate": "10/12/2021",
+      "id": 31
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "52930821-cbea-4b05-9f45-7c02b1bb0d8c",
+        "brand": "Chevrolet",
+        "name": "Corvette Z06",
+        "about": "O Chevrolet Corvette Z06 inclui freios Brembo de alto desempenho com pinças maiores no conjunto dianteiro, itens aerodinâmicos com capô de fibra de carbono, suspensão para alto desempenho.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 620
+        },
+        "fuel_type": "gasoline_motor",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/3.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "330km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "6.2s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "900 HP"
+          },
+          {
+            "type": "gasoline_motor",
+            "name": "Gasoline"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "2 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/6.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/7.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/8.png"
+        ]
+      },
+      "startDate": "10/12/2021",
+      "endDate": "11/12/2021",
+      "id": 32
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 33
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 34
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 35
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 36
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 37
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "10/12/2021",
+      "endDate": "11/12/2021",
+      "id": 38
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "14/04/2022",
+      "endDate": "15/04/2022",
+      "id": 39
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 40
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 41
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/12/2021",
+      "endDate": "03/12/2021",
+      "id": 42
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 43
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 44
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 45
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 46
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 47
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "14/04/2022",
+      "endDate": "15/04/2022",
+      "id": 48
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "14/04/2022",
+      "endDate": "15/04/2022",
+      "id": 49
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "14/04/2022",
+      "endDate": "15/04/2022",
+      "id": 50
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "14/04/2022",
+      "endDate": "15/04/2022",
+      "id": 51
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "22/04/2022",
+      "endDate": "23/04/2022",
+      "id": 52
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "22/04/2022",
+      "endDate": "23/04/2022",
+      "id": 53
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "24/04/2022",
+      "endDate": "25/04/2022",
+      "id": 54
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 55
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "26/04/2022",
+      "endDate": "27/04/2022",
+      "id": 56
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "29/04/2022",
+      "endDate": "30/04/2022",
+      "id": 57
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "29/04/2022",
+      "endDate": "30/04/2022",
+      "id": 58
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "29/09/2022",
+      "endDate": "30/09/2022",
+      "id": 59
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "29/09/2022",
+      "endDate": "30/09/2022",
+      "id": 60
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "13/10/2022",
+      "endDate": "14/10/2022",
+      "id": 61
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "21/10/2022",
+      "endDate": "22/10/2022",
+      "id": 62
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "20/10/2022",
+      "endDate": "21/10/2022",
+      "id": 63
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "20/10/2022",
+      "endDate": "21/10/2022",
+      "id": 64
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "22/10/2022",
+      "endDate": "23/10/2022",
+      "id": 65
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "22/12/2022",
+      "endDate": "23/12/2022",
+      "id": 66
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "22/12/2022",
+      "endDate": "23/12/2022",
+      "id": 67
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "22/12/2022",
+      "endDate": "23/12/2022",
+      "id": 68
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 69
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 70
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 71
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 72
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 73
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 74
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 75
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 76
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 77
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 78
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "17/12/2022",
+      "endDate": "18/12/2022",
+      "id": 79
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "30/03/2023",
+      "endDate": "31/03/2023",
+      "id": 80
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "02/11/2022",
+      "endDate": "02/11/2022",
+      "id": 81
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "23/12/2021",
+      "endDate": "24/12/2021",
+      "id": 82
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "06/01/2022",
+      "endDate": "06/01/2022",
+      "id": 83
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "06/01/2022",
+      "endDate": "06/01/2022",
+      "id": 84
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "06/01/2022",
+      "endDate": "06/01/2022",
+      "id": 85
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "06/01/2022",
+      "endDate": "06/01/2022",
+      "id": 86
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "06/01/2022",
+      "endDate": "06/01/2022",
+      "id": 87
+    },
+    {
+      "user_id": 1,
+      "car": {
+        "id": "535e8de8-721b-4bac-8b72-7d29be7da467",
+        "brand": "Audi",
+        "name": "RS 5 Coupé",
+        "about": "O carro ainda tem sistema de tração nas quatro rodas Quattro com diferencial traseiro esportivo de série. De acordo com a Audi, ele faz o mesmo em 3,8 segundos na Sportback.",
+        "rent": {
+          "period": "Ao dia",
+          "price": 120
+        },
+        "fuel_type": "electric",
+        "thumbnail": "https://storage.googleapis.com/golden-wind/ignite/react-native/thumbnails/1.png",
+        "accessories": [
+          {
+            "type": "speed",
+            "name": "250km/h"
+          },
+          {
+            "type": "acceleration",
+            "name": "3.8s"
+          },
+          {
+            "type": "turning_diameter",
+            "name": "800 HP"
+          },
+          {
+            "type": "electric_motor",
+            "name": "Elétrico"
+          },
+          {
+            "type": "exchange",
+            "name": "Auto"
+          },
+          {
+            "type": "seats",
+            "name": "5 pessoas"
+          }
+        ],
+        "photos": [
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/1.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/2.png",
+          "https://storage.googleapis.com/golden-wind/ignite/react-native/images/3.png"
+        ]
+      },
+      "startDate": "10/12/2021",
+      "endDate": "11/12/2021",
+      "id": 88
     }
   ]
 }

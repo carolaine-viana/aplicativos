@@ -16,6 +16,7 @@ import { SchedulingComplete } from '../screens/SchedulingComplete';
 // };
 
 import { RootStackParamList } from '../../src/@types/navigation';
+import { MyCars } from '../screens/MyCars';
 
 
 const {Navigator, Screen} = createStackNavigator<RootStackParamList>();
@@ -62,6 +63,14 @@ export function StackRoutes(){
                 options={{
                     headerShown: false,
                   }}
+            />
+
+            <Screen
+                name="MyCars"
+                component={MyCars}
+                options={{
+                    headerShown: false,
+                }}
             />
         </Navigator>
     )
