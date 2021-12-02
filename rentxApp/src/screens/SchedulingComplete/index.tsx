@@ -13,6 +13,7 @@ import {
 } from './styles';
 import { useNavigation } from '@react-navigation/core';
 
+
 export function SchedulingComplete(){ 
     const {width} = useWindowDimensions();
     const navigation = useNavigation(); 

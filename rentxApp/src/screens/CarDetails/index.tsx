@@ -25,19 +25,23 @@ import {
    Accessories,
    Footer
 } from './styles';
+import { StackScreenProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../../@types/navigation';
+
+type Props = StackScreenProps<RootStackParamList, 'CarDetails'>;
 
 
 interface Params {
    car: CarDTO;
 }
 
-export function CarDetails(){ 
-   const navigation = useNavigation();
+export function CarDetails({}: Props){ 
+   const navigation = useNavigation<Props>();
    const route = useRoute();
    const {car} = route.params as Params;
 
    function handleConfirmRental(){
-      navigation.navigate('Scheduling')
+      navigation.navigate('Scheduling', {car})
    }
 
    function handleBack(){
