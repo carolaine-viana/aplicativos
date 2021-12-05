@@ -61,23 +61,20 @@ export function Scheduling({}: Props){
     }
 
     function handleChangeDate(date: DayProps){
-        //na primeira vez que o usuario clicar na data, tanto a final quanto a inicial vai ser a mesma data
-        let start = !lastSelectedDate.timestamp ? date : lastSelectedDate; //nao tem uma data final selecionada ele coloca a mesma do inicio
+        let start = !lastSelectedDate.timestamp ? date : lastSelectedDate; 
         let end = date;
 
-    //se ele seleciona 20 e dps 16, o 16 vai ser o primeiro e depois o 20. menor para o maior.
         if(start.timestamp > end.timestamp){
             start = end;
             end = start;
         }
 
-        setlastSelectedDate(end); //passar sempre a ultima data selecionada
-        //criar uma funcao para gerar o intervalo 
+        setlastSelectedDate(end); 
         const interval = generateInterval(start, end);
         setmarkedDates(interval);
 
         const firstDate = Object.keys(interval)[0];
-        const endDate = Object.keys(interval)[Object.keys(interval).length - 1]; //vector por isso desconta o -1
+        const endDate = Object.keys(interval)[Object.keys(interval).length - 1];
         
         setRentalPeriod({
            startFormatted: format(getPlataformDate(new Date(firstDate)), 'dd/MM/yyyy'),
