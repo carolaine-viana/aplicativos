@@ -18,14 +18,14 @@ import { Routes } from './src/routes';
 
 
 export default function App() {
-  const [fontsLoaded] = useFonts({
-    useFonts,
-    Nunito_400Regular,
-    Nunito_800ExtraBold,
-    Nunito_700Bold,
-    Nunito_600SemiBold,
-    Halant_500Medium
-  })
+  // const [fontsLoaded] = useFonts({
+  //   useFonts,
+  //   Nunito_400Regular,
+  //   Nunito_800ExtraBold,
+  //   Nunito_700Bold,
+  //   Nunito_600SemiBold,
+  //   Halant_500Medium
+  // })
   
   //if(!fontsLoaded){
     //return <AppLoading/>
