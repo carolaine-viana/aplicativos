@@ -4,8 +4,6 @@ import {
   Container,
   ContainerSeach,
   Input,
-  SelectCategoriesContainer,
-  Button,
   Text,
   Content,
   CardContainer,
@@ -17,111 +15,121 @@ import {
   Price,
   ClothesList,
   WrappedButton,
+  HeaderInfo,
+  ContainerButton,
 } from './styles'
 import HeartSvg from '../../assets/svgs/akar.heart.svg'
 import api from '../../services/api'
-import { Alert, View } from 'react-native'
+import { Alert } from 'react-native'
 import { Load } from '../../components/Load'
 import { useNavigation } from '@react-navigation/core'
+import { ButtonFilter } from '../../components/ButtonFilter'
 
 export function FilterClothes() {
   const [clothes, setClothes] = useState([])
   const [loading, setLoading] = useState(true)
   const navigation = useNavigation()
-  const [searchText, setsearchText] = useState('');
-  const [lista, setLista] = useState(list)
-  const list = [...clothes]
+  const [searchText, setsearchText] = useState('')
+  const [filteredClothes, setFilteredClothes] = useState([])
 
-
-  console.warn(list)
-
-
-  function handleConfirm() {
-    navigation.navigate('DetailProduct', {
-      clothes,
-    })
-  }
-
-  useEffect(() => {
-
-      const filtro = list.filter(item => item.name.includes(searchText))
-      // setMySkills([...mySkill, newSkill])
-      // setClothes([...filtro, clothes])
-
-      setClothes([...filtro, clothes])
-    
-  }, [searchText])
 
   useEffect(() => {
     async function fetchClothes() {
       try {
         const response = await api.get('/ecommerce')
-        // console.log(response)
         setClothes(response.data)
+        setFilteredClothes(response.data)
       } catch (error) {
-        // console.log(error)
         Alert.alert('nao foi')
       } finally {
         setLoading(false)
       }
     }
-    fetchClothes();
+    fetchClothes()
   }, [])
 
+  function handleFilterClothes(text = '') {
+    setsearchText(text)
 
-  // useEffect(() => {
-  //   const filterData = clothes.filter(item => {
-  //     const isValid = item.name.toLowerCase().includes(searchText.toLowerCase())
-      
-  //     if(isValid){
-  //       return list;
-  //     }
-    
-  //   });
+    if (!text) {
+      setFilteredClothes(clothes)
+      return
+    }
 
-  //   setClothes(filterData)
-    
-  // }, [])
+    const filtro = clothes.filter((item) =>
+      item.name.toLowerCase().includes(searchText.toLowerCase()),
+    )
 
-  // function handleChangeInputText(text: string) {
-  //   if(!text){
-  //     setClothes(list)
-  //   }
-  //   setsearchText(text)
-  // }
+    setFilteredClothes(filtro)
+  }
 
+  function handleFilterAll(){
+      setFilteredClothes(clothes)
+  }
 
+  function handleFilterTops(){
+    const filtro = clothes.filter((item) => item.category[0].type === 'Tops')
+    setFilteredClothes(filtro)
+  }
+
+  function handleFilterPants(){
+    const filtro = clothes.filter((item) => item.category[0].type === 'Pants')
+    setFilteredClothes(filtro)
+  }
+
+  function handleFilterJackets(){
+    const filtro = clothes.filter((item) => item.category[0].type === 'Jackets')
+    setFilteredClothes(filtro)
+  }
 
   return (
     <Container>
       <Header />
 
-      {/* {
-                  car.accessories.map(accessory => (
-                     <Acessory
-                        key={accessory.type}
-                        name={accessory.name}
-                        icon={getAccessoriesIcon(accessory.type)}
-                     />
-
-                  ))
-      } */}
-
-
       <ContainerSeach>
         <Input
-          placeholder="Search Products"
+          placeholder="SEARCH PRODUCTS"
           value={searchText}
-          onChangeText={(text) => setsearchText(text)}
+          onChangeText={handleFilterClothes}
         />
 
-        <Title>search results for: {searchText}</Title>
+      <ContainerButton>
+            <ButtonFilter
+              title="All"
+              color="white"
+              onPress={() => handleFilterAll()}
+            />
+
+          <ButtonFilter
+              title="Tops"
+              color="white"
+              onPress={() => handleFilterTops()}
+            />
+
+            <ButtonFilter
+              title="Pants"
+              color="white"
+              onPress={() => handleFilterPants()}
+            />
+
+            <ButtonFilter
+              title="Jackets"
+              color="white"
+              onPress={() => handleFilterJackets()}
+            />
+      </ContainerButton>
+
+      <HeaderInfo>
+          <Title>search results for: {searchText}</Title>
+          <Title>Results {filteredClothes.length}</Title>
+        </HeaderInfo>
+
 
         {loading ? (
           <Load />
         ) : (
           <ClothesList
-            data={clothes}
+            data={filteredClothes}
             keyExtractor={(item) => String(item.id)}
             renderItem={({ item }) => (
               <WrappedButton

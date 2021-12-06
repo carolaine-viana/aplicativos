@@ -30,25 +30,6 @@ export function Feed() {
   const navigation = useNavigation()
   const [clothes, setClothes] = useState([])
 
-  const categoriesList = () => {
-    const map = clothes.map((p) => p.category[0].type)
-
-    let resu = []
-
-    for (let i = 0; i < map.length; i++) {
-      resu = map[i]
-
-      // console.log(resu)
-
-      switch (resu) {
-        case 'Tops':
-          return console.log('oiii')
-        case 'Pants':
-          console.log('aq')
-          return console.log('2222')
-      }
-    }
-  }
 
   useEffect(() => {
     async function fetchClothes() {
@@ -56,7 +37,6 @@ export function Feed() {
         const response = await api.get('/ecommerce')
         setClothes(response.data)
       } catch (error) {
-        //console.log(error)
         Alert.alert('nao foi')
       }
     }
@@ -74,21 +54,8 @@ export function Feed() {
           onPress={() => navigation.navigate('FilterClothes')}
         />
 
-        {/* {
-                  clothes.map(accessory => (
-                     <Acessory
-                        key={accessory.type}
-                        name={accessory.name}
-                        icon={getAccessoriesIcon(accessory.type)}
-                     />
-
-                  ))
-               } */}
-
         <ContainerSelect>
-          <Wrapped onPress={() => navigation.navigate('FilterClothes')}>
-            {categoriesList()}
-          </Wrapped>
+          <Wrapped onPress={() => navigation.navigate('FilterClothes')}></Wrapped>
         </ContainerSelect>
       </CategoryContainer>
 
@@ -110,7 +77,9 @@ export function Feed() {
           source={img8}
           style={{ height: 400, width: 400 }}
           resizeMode="contain"
-        ></ImagePost>
+        >
+
+        </ImagePost>
       </Content>
     </Container>
   )

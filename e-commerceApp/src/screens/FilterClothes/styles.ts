@@ -17,17 +17,6 @@ export const Input = styled.TextInput`
 
 `;
 
-export const SelectCategoriesContainer = styled.View`
-    padding: 20px 0px 20px 0px;
-    flex-direction: row;
-    justify-content: space-between;
-`;
-
-export const Button = styled(Pressable)`
-    height: ${RFValue(46)}px;
-    border-width: 1px;
-    border-color: ${({ theme }) => theme.colors.border};
-`;
 
 export const Text = styled.Text`
     font-family: ${({ theme }) => theme.fonts.primary_600};
@@ -35,9 +24,7 @@ export const Text = styled.Text`
     color: ${({ theme }) => theme.colors.text_subtitle};
     align-items: center;
 `
-export const Content = styled.ScrollView`
-    padding-left: ${RFValue(5)}px;
-`;
+
 
 export const WrappedButton = styled(RectButton)`
 
@@ -55,6 +42,12 @@ export const CardContainer = styled.View`
 
 export const ContainerInfo = styled.View`
 `;
+
+export const ContainerButton = styled.View`
+    width: 100%;
+    flex-direction: row;
+`;
+
 
 export const ImageCard = styled.Image`
     width: ${RFValue(126)};
@@ -94,4 +87,15 @@ export const ClothesList = styled(FlatList).attrs({
 })` 
 `;
 
+export const HeaderInfo = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    padding: ${RFValue(10)}px;;
+`;
+
+export const ButtonFilter = styled(RectButton)`
+    width: ${RFValue(46)}px;
+    height: ${RFValue(46)}px;
+    background-color: red;
+`;
 
