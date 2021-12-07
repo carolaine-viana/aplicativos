@@ -24,7 +24,7 @@ import { useTheme } from 'styled-components';
 import { StatusBar, FlatList } from 'react-native';
 import { Car } from '../../components/Car';
 import {AntDesign} from '@expo/vector-icons';
-import { Load } from '../../components/Load';
+import { LoadingAnimation } from '../../components/LoadingAnimation';
 
 type Props = StackScreenProps<RootStackParamList, 'MyCars'>;
 
@@ -85,7 +85,7 @@ export function MyCars({}: Props){
               </SubTitle>
 
            </Header>
-           {loading ? <Load/> : 
+           {loading ? <LoadingAnimation/> : 
            <Content>
               <Appointments>
                <AppointmentsTitle>Agendamentos feitos</AppointmentsTitle>

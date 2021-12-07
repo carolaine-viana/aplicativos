@@ -17,18 +17,28 @@ import { SchedulingComplete } from '../screens/SchedulingComplete';
 
 import { RootStackParamList } from '../../src/@types/navigation';
 import { MyCars } from '../screens/MyCars';
+import { Splash } from '../screens/Splash';
 
 
 const {Navigator, Screen} = createStackNavigator<RootStackParamList>();
 
 export function StackRoutes(){
     return(
-        <Navigator>
+        <Navigator initialRouteName="Splash">
+            <Screen
+                name="Splash"
+                component={Splash}
+                options={{
+                    headerShown: false,
+                }}
+            />
+
             <Screen
                 name="Home"
                 component={Home}
                 options={{
                     headerShown: false,
+                    gestureEnabled: false, //nao deixa voltar pra tela de splash
                 }}
             />
 

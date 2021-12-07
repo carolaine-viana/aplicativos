@@ -1,4 +1,7 @@
 export type RootStackParamList = {
+  Splash: {
+    name: string;
+  };
   Home: {
     name: string;
   };
