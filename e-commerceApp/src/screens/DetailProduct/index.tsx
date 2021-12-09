@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
+  Container,
   ImageContainer,
-  ImageBackground,
   Content,
   ContainerTopInfo,
   Title,
@@ -11,21 +11,30 @@ import {
   Footer,
   WrappedButton,
   WrappedInfo,
-  Image,
 } from './styles'
 import { ButtonDetail } from '../../components/ButtonDetail'
-import { useNavigation, useRoute } from '@react-navigation/core'
-import { NavigationContainer } from '@react-navigation/native'
+import { useRoute } from '@react-navigation/core'
+import { ImageSlider } from '../../components/ImageSlider'
+import { Header } from '../../components/Header'
+import { BackButton } from '../../components/BackButton';
+import { useNavigation } from '@react-navigation/core'
+
 
 export function DetailProduct() {
-  const route = useRoute()
-  const { item } = route.params
-  const navigation = useNavigation()
+  const navigation = useNavigation();
+  const route = useRoute();
+  const { item } = route.params;
 
   return (
-    <>
+    <Container>
+      <Header/>
+
+      <BackButton onPress={() => navigation.goBack()}/>
+
       <ImageContainer>
-        <Image source={{ uri: item.figure }} resizeMode="contain" />
+        <ImageSlider
+          imagesUrl={item.photos}
+      />
       </ImageContainer>
 
       <ContainerTopInfo>
@@ -47,14 +56,19 @@ export function DetailProduct() {
 
       <Footer>
         <WrappedButton>
-          <ButtonDetail title="wishlist" color="white" type="HeartButton" />
+          <ButtonDetail
+            title="wishlist"
+            color="white"
+            type="HeartButton"
+            onPress={() => void}
+          />
 
           <ButtonDetail
             title="Add to bag"
-            onPress={() => navigation.navigate('BuyNow')}
+            onPress={() => navigation.navigate('BuyNow', {item})}
           />
         </WrappedButton>
       </Footer>
-    </>
+    </Container>
   )
 }

@@ -13,12 +13,13 @@ interface Props {
   title: string;
   color?: string;
   type?: string;
+  onPress: () => void;
 }
 
-export function ButtonDetail({ title, color, type, detail, ...rest }: Props) {
+export function ButtonDetail({ title, color, type, onPress, ...rest }: Props) {
   return (
     <WrappedButton>
-      <Container {...rest} color={color}>
+      <Container {...rest} color={color} onPress={onPress}>
         <ButtonWrapped>
           {type === "HeartButton" ? (
             <ContainerIcon>

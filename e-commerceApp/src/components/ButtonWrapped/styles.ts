@@ -3,7 +3,6 @@ import {FlatList, Pressable} from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled(Pressable)`
-
 `;
 
 export const Image = styled.Image`

@@ -15,6 +15,7 @@ import {
 import {Halant_500Medium} from '@expo-google-fonts/halant';
 
 import { Routes } from './src/routes';
+import { AuthContext } from './src/services/AuthContext';
 
 
 export default function App() {
@@ -33,9 +34,11 @@ export default function App() {
   
  
   return (
-    <ThemeProvider theme={theme}>
-      <Routes/>
-  </ThemeProvider>
+    <AuthContext.Provider value={[]}>
+      <ThemeProvider theme={theme}>
+        <Routes/>
+    </ThemeProvider>
+    </AuthContext.Provider>
   )
 }
 

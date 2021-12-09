@@ -6,12 +6,21 @@ import { Feed } from '../screens/Feed';
 import { DetailProduct } from '../screens/DetailProduct';
 import { FilterClothes } from '../screens/FilterClothes';
 import { BuyNow } from '../screens/BuyNow';
+import { Splash } from '../screens/Splash';
 
 const {Navigator, Screen} = createStackNavigator();
 
 export function StackRoutes(){ 
      return(
-        <Navigator>
+        <Navigator initialRouteName="Splash">
+            <Screen
+                name="Splash"
+                component={Splash}
+                options={{
+                    headerShown: false,
+                }}
+            />
+
             <Screen
                 name="LoginPage"
                 component={LoginPage}

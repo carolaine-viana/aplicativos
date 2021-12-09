@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
 import { Header } from '../../components/Header'
 import {
   Container,
-  ContainerSeach,
+  ContainerInput,
   Input,
-  Text,
-  Content,
   CardContainer,
   ContainerInfo,
   ImageCard,
@@ -24,13 +22,14 @@ import { Alert } from 'react-native'
 import { Load } from '../../components/Load'
 import { useNavigation } from '@react-navigation/core'
 import { ButtonFilter } from '../../components/ButtonFilter'
+import { BackButton } from '../../components/BackButton'
 
 export function FilterClothes() {
   const [clothes, setClothes] = useState([])
   const [loading, setLoading] = useState(true)
   const navigation = useNavigation()
   const [searchText, setsearchText] = useState('')
-  const [filteredClothes, setFilteredClothes] = useState([])
+  const [filteredClothes, setFilteredClothes] = useState([]);
 
 
   useEffect(() => {
@@ -84,14 +83,18 @@ export function FilterClothes() {
 
   return (
     <Container>
-      <Header />
+      <Header
+      />
 
-      <ContainerSeach>
+      <BackButton onPress={() => navigation.goBack()}/>
+
+      <ContainerInput>
         <Input
           placeholder="SEARCH PRODUCTS"
           value={searchText}
           onChangeText={handleFilterClothes}
         />
+      </ContainerInput>
 
       <ContainerButton>
             <ButtonFilter
@@ -136,7 +139,10 @@ export function FilterClothes() {
                 onPress={() => navigation.navigate('DetailProduct', { item })}
               >
                 <CardContainer>
-                  <ImageCard source={{ uri: item.figure }} resizeMode="cover" />
+                  <ImageCard
+                    source={{ uri: item.figure }}
+                    resizeMode="cover"
+                  />
 
                   <ContainerInfo>
                     <Title>{item.name}</Title>
@@ -148,11 +154,11 @@ export function FilterClothes() {
                     <HeartSvg />
                   </ContainerSvg>
                 </CardContainer>
+                
               </WrappedButton>
             )}
           />
         )}
-      </ContainerSeach>
     </Container>
   )
 }

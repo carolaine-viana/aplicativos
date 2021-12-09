@@ -1,32 +1,140 @@
-import React from "react";
-import { Header } from "../../components/Header";
+import React, { useState } from 'react'
+import { Header } from '../../components/Header'
 import {
   ImageBackground,
   ContainerDescription,
   Title,
   Price,
   Footer,
-} from "./styles";
-import Image from "../../assets/img6.png";
-import { Button } from "../../components/Button";
+  ImageCard,
+  ModalView,
+  ModalContainer,
+  CloseContainer,
+  ContainerCard,
+  ProductContainer,
+  ProductImage,
+  ContainerButton,
+  TitleModal,
+  ContainerTotal,
+  TextModal,
+} from './styles'
+import { Button as ButtonConfirm } from '../../components/Button'
+import { useRoute } from '@react-navigation/core';
+import {Modal, View, Pressable, Button} from 'react-native';
+import {EvilIcons} from '@expo/vector-icons';
+
+import { BackButton } from '../../components/BackButton';
+import { useNavigation } from '@react-navigation/core'
+
 
 export function BuyNow() {
+  const route = useRoute();
+  const navigation = useNavigation();
+  const { item } = route.params;
+  const [quantidade, setQuantidade] = useState(1);
+  const [modalVisible, setModalVisible] = useState(false);
+
+  function handleMax(){
+    const max = quantidade + 1;
+    setQuantidade(max)
+  }
+  
+  function handleMin(){
+    const min = quantidade - 1;
+    if(min > 0){
+      setQuantidade(min)
+    }else{
+      return 0;
+    }
+
+  }
+
+  const calc = Number(item.price * quantidade).toFixed(2);
+
+ 
   return (
-      <>
-      <ImageBackground
-        source={Image}
-      >
-          <Header/>
+    <>
+      <Header />
+
+      <BackButton onPress={() => navigation.goBack()}/>
+
+      <ImageBackground>
+        <ImageCard source={item.photos} />
       </ImageBackground>
 
-          <ContainerDescription>
-              <Title>Crew Neck T-shirt</Title>
-              <Price>$79.90</Price>
-          </ContainerDescription>
-        
-        <Footer>
-            <Button title="Buy now"/>
-        </Footer>
-      </>
-  );
+      <ContainerDescription>
+        <Title>Crew Neck T-shirt</Title>
+        <Price>$79.90</Price>
+      </ContainerDescription>
+
+      <ModalView >
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={modalVisible}
+          onRequestClose={() => {
+            setModalVisible(!modalVisible);
+          }}
+        >
+        <View style={{alignItems: 'center'}}>
+
+        <ModalContainer>
+
+          <CloseContainer>
+            <Pressable onPress={() => setModalVisible(!modalVisible)}>
+              <EvilIcons
+                name="close-o"
+                size={30}
+              />
+            </Pressable>
+          </CloseContainer>
+
+          <ContainerCard>
+            <Title>Cart</Title>
+
+            <ProductContainer>
+              <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+                <ProductImage
+                  source={{uri: item.figure}}
+                />
+
+                  <TextModal>Preço: R$ {item.price} {'\n'} Quantidade: {quantidade}</TextModal>
+                
+                <ContainerButton>
+                    <Button title="+" onPress={handleMax} color="white"/>
+                    <Button title="-" onPress={handleMin} color="white"/>
+                </ContainerButton>
+               
+              </View>
+
+                  
+              <ContainerTotal>
+                <TitleModal>Total:</TitleModal>
+                <TitleModal>R$ {calc}</TitleModal>
+              </ContainerTotal>
+
+            </ProductContainer>
+
+          </ContainerCard>
+
+        </ModalContainer>
+                <ButtonConfirm
+                  title="confirmar"
+                  onPress={null}
+                />
+        </View>
+
+      </Modal>
+     
+    </ModalView>
+
+
+      <Footer>
+        <ButtonConfirm
+          title="Buy now"
+          onPress={() => setModalVisible(true)}
+        />
+      </Footer>
+    </>
+  )
 }
