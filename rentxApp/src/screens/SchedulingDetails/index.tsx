@@ -84,7 +84,11 @@ export function SchedulingDetails(){
           unavailable_dates
        })
        .then(() => {
-         navigation.navigate('SchedulingComplete')
+         navigation.navigate('Confirmation', {
+            nextScreenRoute: 'Home',
+            title: 'Carro alugado!',
+            message: `Agora você só precisa ir\n até a concessionária da RENTX\npegar o seu automóvel!`
+         })
        })
        .catch(() => {
          setLoading(false)

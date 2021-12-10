@@ -19,6 +19,7 @@ import {
 import { useNavigation } from '@react-navigation/core';
 
 
+
 export function Splash(){ 
     const splashAnimation = useSharedValue(0); // 0 => 50
     const navigation = useNavigation();

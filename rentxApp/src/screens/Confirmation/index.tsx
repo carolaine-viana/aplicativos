@@ -1,7 +1,9 @@
-import React from 'react';
-import {StatusBar, useWindowDimensions} from 'react-native';
+import React, { useState } from 'react';
+import {StatusBar, useWindowDimensions, Image} from 'react-native';
 import LogoSvg from '../../assets/logo_background_gray.svg';
 import DoneSvg from '../../assets/done.svg';
+import payment from '../../assets/payment.json';
+
 import { ConfirmButton } from '../../components/ConfirmButton';
 
 import {      
@@ -11,16 +13,29 @@ import {
    Message,
    Footer,
 } from './styles';
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation, useRoute } from '@react-navigation/core';
+
+import LottieView from 'lottie-react-native';
+
+import Animated from 'react-native-reanimated';
+import { ConfirmAnimation } from '../ConfirmAnimation';
+
+interface Params {
+    title: string;
+    message: string;
+    nextScreenRoute: string;
+}
 
 
-export function SchedulingComplete(){ 
+export function Confirmation(){ 
     const {width} = useWindowDimensions();
     const navigation = useNavigation(); 
-
+    const route = useRoute();
+    const {title, message, nextScreenRoute} = route.params as Params;
+    const [load, setLoad] = useState(true);
 
     function handleConfirm(){
-        navigation.navigate('Home')
+        navigation.navigate(nextScreenRoute)
     }
 
      return(
@@ -35,18 +50,16 @@ export function SchedulingComplete(){
             />
 
             <Content>
-                <DoneSvg
-                    width={80}
-                    height={80}
-                />
 
-                <Title>Carro alugado!</Title>
+                <ConfirmAnimation/>
+
+                <Title>{title}</Title>
 
                 <Message>
-                    Agora você só precisa ir {'\n'}
-                    até a concessionária da RENTX {'\n'}
-                    pegar o seu automóvel.
+                    {message}
                 </Message>
+
+
 
             </Content>
 

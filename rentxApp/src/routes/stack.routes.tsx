@@ -5,7 +5,6 @@ import { Home } from '../screens/Home';
 import { CarDetails } from '../screens/CarDetails';
 import { Scheduling } from '../screens/Scheduling';
 import { SchedulingDetails } from '../screens/SchedulingDetails';
-import { SchedulingComplete } from '../screens/SchedulingComplete';
 
 // export type RootStackParamList = {
 //     Home: undefined;
@@ -18,13 +17,17 @@ import { SchedulingComplete } from '../screens/SchedulingComplete';
 import { RootStackParamList } from '../../src/@types/navigation';
 import { MyCars } from '../screens/MyCars';
 import { Splash } from '../screens/Splash';
+import { SignIn } from '../screens/SignIn';
+import { SignUpFirstStep } from '../screens/signUp/SignUpFirstStep';
+import { SignUpSecondStep } from '../screens/signUp/SignUpSecondStep';
+import { Confirmation } from '../screens/Confirmation';
 
 
 const {Navigator, Screen} = createStackNavigator<RootStackParamList>();
 
 export function StackRoutes(){
     return(
-        <Navigator initialRouteName="Splash">
+        <Navigator initialRouteName="Home">
             <Screen
                 name="Splash"
                 component={Splash}
@@ -32,6 +35,34 @@ export function StackRoutes(){
                     headerShown: false,
                 }}
             />
+
+            <Screen
+                name="SignIn"
+                component={SignIn}
+                options={{
+                    headerShown: false,
+                    gestureEnabled: false, //nao deixa voltar pra tela de splash
+                }}
+            />
+
+            <Screen
+                name="SignUpFirstStep"
+                component={SignUpFirstStep}
+                options={{
+                    headerShown: false,
+                    gestureEnabled: false, //nao deixa voltar pra tela de splash
+                }}
+            />
+
+            <Screen
+                name="SignUpSecondStep"
+                component={SignUpSecondStep}
+                options={{
+                    headerShown: false,
+                    gestureEnabled: false, //nao deixa voltar pra tela de splash
+                }}
+            />
+
 
             <Screen
                 name="Home"
@@ -68,8 +99,8 @@ export function StackRoutes(){
 
 
             <Screen
-                name="SchedulingComplete"
-                component={SchedulingComplete}
+                name="Confirmation"
+                component={Confirmation}
                 options={{
                     headerShown: false,
                   }}
