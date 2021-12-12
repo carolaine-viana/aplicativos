@@ -15,13 +15,15 @@ import {
   FormTitle,
 } from './styles'; 
 import * as Yup from 'yup';
+import { userAuth } from '../../../hooks/auth'
 
 export function SignUpFirstStep() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [driverLicense, setDriverLicense] = useState('');
-
   const navigation = useNavigation();
+  const {user} = userAuth();
+  console.warn(user)
 
 
   function handleBack() {

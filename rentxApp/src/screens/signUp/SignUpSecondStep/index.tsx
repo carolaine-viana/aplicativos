@@ -16,6 +16,7 @@ import {
 } from './styles'
 import { PasswordInput } from '../../../components/PasswordInput'
 import { useTheme } from 'styled-components';
+import api from '../../../services/api'
 
 interface Params {
   user: {
@@ -38,7 +39,7 @@ export function SignUpSecondStep() {
     navigation.goBack()
   }
 
-  function handleRegister(){
+  async function handleRegister(){
     if(!password || !passwordConfirm){
       return Alert.alert('Informe a senha e a confirmação dela')
     }
@@ -50,12 +51,21 @@ export function SignUpSecondStep() {
     //se nao der erro enviar para API e cadastrar
     //depois chamar a tela de conf de cadastro.
 
-    navigation.navigate('Confirmation', {
-      nextScreenRoute: 'SignIn',
-      title: 'Conta criada!',
-      message: `Agora é so fazer login\ne aproveitar!`
+    await api.post('/users', {
+      name: user.name,
+      email: user.email,
+      driver_license: user.driverLicense,
+      password
+    }).then(() => {
+        navigation.navigate('Confirmation', {
+          nextScreenRoute: 'SignIn',
+          title: 'Conta criada!',
+          message: `Agora é so fazer login\ne aproveitar!`
+        })
+    }).catch((error) =>{
+      // console.log(error)
+      Alert.alert('opa', 'nao foi posivel cadastrar');
     })
-
     
   }
 

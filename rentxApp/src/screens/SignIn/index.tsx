@@ -13,12 +13,14 @@ import { PasswordInput } from '../../components/PasswordInput'
 import { Container, Header, Title, SubTitle, Form, Footer } from './styles'
 import * as Yup from 'yup'
 import { useNavigation } from '@react-navigation/native'
+import { userAuth } from '../../hooks/auth'
 
 export function SignIn() {
   const theme = useTheme()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigation = useNavigation();
+  const {signIn} = userAuth();
 
   async function handleSignIn() {
     try {
@@ -29,12 +31,13 @@ export function SignIn() {
         password: Yup.string().required('A senha é obrigatorio'),
       })
       await schema.validate({ email, password })
-      Alert.alert('tudo certo!;')
+      Alert.alert('tudo certo!')
       //Fazer login.
+      signIn({email, password})
     } catch (error) {
-      if(error instanceof Yup.ValidationError){ //se for um erro do Yup
+      if (error instanceof Yup.ValidationError) { //se for um erro do Yup
         Alert.alert('opa', error.message);
-      }else{
+      } else {
         Alert.alert('erro na autenticacao', 'ocorreu um erro ao fazer login, verifique as credenciais.')
       }
     }
