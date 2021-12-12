@@ -43,7 +43,6 @@ export function DetailProduct() {
       </ContainerTopInfo>
 
       <Content>
-        <WrappedInfo>
           <Text>DESCRIPTION</Text>
           <SubText>
             Straight cut shirt jacket in sturdy, washed denim. Features a
@@ -51,24 +50,21 @@ export function DetailProduct() {
             long sleeves with button cuffs. Detachable tie belt at the waist and
             a rounded hem.
           </SubText>
-        </WrappedInfo>
       </Content>
 
       <Footer>
-        <WrappedButton>
           <ButtonDetail
             title="wishlist"
             color="white"
             type="HeartButton"
-            onPress={() => void}
           />
 
           <ButtonDetail
             title="Add to bag"
             onPress={() => navigation.navigate('BuyNow', {item})}
           />
-        </WrappedButton>
       </Footer>
+
     </Container>
   )
 }

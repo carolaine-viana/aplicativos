@@ -1,7 +1,7 @@
 import { RectButton } from 'react-native-gesture-handler';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
-import { FlatList, Pressable } from 'react-native';
+import { Dimensions, FlatList, Pressable } from 'react-native';
 
 
 export const Container = styled.View` 
@@ -16,9 +16,9 @@ export const ContainerInput = styled.View`
 `;
 
 export const Input = styled.TextInput`
-    bottom-width: 1px;
+    border-bottom-width: 1px;
+    padding: 10px;
 `;
-
 
 export const ContainerButton = styled.View`
     width: 100%;
@@ -48,11 +48,12 @@ export const WrappedButton = styled(RectButton)`
 `;
 
 export const CardContainer = styled.View`
+    width: ${Dimensions.get('window').width}px;
     flex-direction: row;
     justify-content: space-between;
-    width: ${RFValue(300)}px;
     flex-wrap: wrap;
-    border-width: 1px;
+    border-top-width: 0.5;
+    border-bottom-width: 0.5;
     border-color: ${({ theme }) => theme.colors.border};
     margin-top: 20px;
 `;

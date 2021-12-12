@@ -13,6 +13,7 @@ import {
   ContainerCard,
   ProductContainer,
   ProductImage,
+  WrappedView,
   ContainerButton,
   TitleModal,
   ContainerTotal,
@@ -93,19 +94,19 @@ export function BuyNow() {
             <Title>Cart</Title>
 
             <ProductContainer>
-              <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+              <WrappedView>
                 <ProductImage
                   source={{uri: item.figure}}
                 />
 
-                  <TextModal>Preço: R$ {item.price} {'\n'} Quantidade: {quantidade}</TextModal>
+                  <TextModal>Preço: R$ {item.price}{'\n'}Quantidade: {quantidade}</TextModal>
                 
                 <ContainerButton>
                     <Button title="+" onPress={handleMax} color="white"/>
                     <Button title="-" onPress={handleMin} color="white"/>
                 </ContainerButton>
                
-              </View>
+              </WrappedView>
 
                   
               <ContainerTotal>
@@ -117,11 +118,14 @@ export function BuyNow() {
 
           </ContainerCard>
 
-        </ModalContainer>
+              <Footer>
                 <ButtonConfirm
                   title="confirmar"
                   onPress={null}
                 />
+              </Footer>
+
+        </ModalContainer>
         </View>
 
       </Modal>
@@ -130,10 +134,15 @@ export function BuyNow() {
 
 
       <Footer>
-        <ButtonConfirm
-          title="Buy now"
-          onPress={() => setModalVisible(true)}
-        />
+        {
+        modalVisible ? null: 
+        (
+          <ButtonConfirm
+            title="Buy now"
+            onPress={() => setModalVisible(true)}
+          /> 
+        )
+      }
       </Footer>
     </>
   )

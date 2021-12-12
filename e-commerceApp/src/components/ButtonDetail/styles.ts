@@ -13,12 +13,12 @@ interface Text extends TextProps{
 
 export const WrappedButton = styled.View<ButtonProps>`
     flex: 1;
-    padding: ${RFValue(20)}px;
+    padding: 0px 10px 10px 10px;
 `
 
 export const Container = styled(RectButton)<ButtonProps>` 
     width: 100%;
-    height: 60px;
+    height: ${RFValue(50)}px;;
     margin-top: 25px;
     background-color: ${({ color, theme }) => color ? color : theme.colors.background_primary};
     align-items: center;

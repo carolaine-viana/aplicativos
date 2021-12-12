@@ -16,7 +16,7 @@ export const ImageIndexes = styled.View`
     flex-direction: row;
     align-self: flex-end;
     padding-right: 24px;
-    padding: 50px;
+    padding: 5px;
 `;
 
 export const ImageIndex = styled.View<ImageIndexProps>`
@@ -30,14 +30,13 @@ export const ImageIndex = styled.View<ImageIndexProps>`
 
 export const CardImageWrapper = styled.View`
     width: ${Dimensions.get('window').width}px;
-    height: ${RFPercentage(50)};
     justify-content: center;
     align-items: center;
 `;
 
 export const CarImage = styled.Image`
-    width: 500px;
-    height: 500px;
+    width: ${RFPercentage(50)};;
+    height: ${RFPercentage(50)};
     justify-content: center;
     align-items: center;
 `;

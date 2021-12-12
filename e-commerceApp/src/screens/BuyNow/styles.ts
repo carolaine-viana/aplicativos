@@ -8,7 +8,7 @@ export const Container = styled.ImageBackground`
 
 export const ImageBackground = styled.View`
     width: 100%;
-    height: 60%;
+    height: 50%;
     justify-content: center;
     align-items: center;
 `;
@@ -19,15 +19,10 @@ export const ImageCard = styled.Image`
 `;
 
 
-export const ContainerDescription = styled.ScrollView.attrs({
-    contentContainerStyle: {
-        padding: 24,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-    },
-    showsVerticalScrollIndicator: false
-})`
-
+export const ContainerDescription = styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
 `;
 
 
@@ -59,7 +54,7 @@ export const ModalContainer = styled.View`
     background-color: ${({ theme }) => theme.colors.white};
     border-radius: 20px;
     padding: 20px;
-    top: 15%;
+    top: 50%;
     width: ${RFValue(300)}px;
     height: ${RFPercentage(60)};
     /* background-color: red; */
@@ -79,7 +74,6 @@ export const ContainerCard = styled.View`
 
 export const ProductContainer = styled.View`
     width: 100%;
-    padding: 10px;
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -88,8 +82,11 @@ export const ProductContainer = styled.View`
 export const ProductImage = styled.Image`
     width: 100px;
     height: 100px;
-    background-color: yellow;
     border-radius: 50;
+`;
+
+export const WrappedView = styled.View`
+    flex-direction: row;
 `;
 
 export const ContainerButton = styled.View`
@@ -102,12 +99,12 @@ export const ContainerButton = styled.View`
     flex-direction: row;
     margin-left: 10px;
     background-color: black;
-    
 `;
 
 export const TextModal = styled.Text`
     font-family: ${({ theme }) => theme.fonts.primary_600};
     font-size: ${RFValue(15)}px;
+    padding-left: 10px;
 `;
 
 export const ContainerTotal = styled.View`
