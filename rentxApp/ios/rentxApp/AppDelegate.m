@@ -30,19 +30,7 @@ static void InitializeFlipper(UIApplication *application) {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-// inclui aqui
-#ifdef FB_SONARKIT_ENABLED
-  InitializeFlipper(application);
-#endif
 
-  [ReactNativeNavigation bootstrapWithDelegate:self launchOptions:launchOptions];
-
-#if RCT_DEV
-  [[ReactNativeNavigation getBridge] moduleForClass:[RCTDevLoadingView class]];
-#endif
-  
-  return YES;
-// ate aqui
 
 #if defined(FB_SONARKIT_ENABLED) && __has_include(<FlipperKit/FlipperClient.h>)
   InitializeFlipper(application);

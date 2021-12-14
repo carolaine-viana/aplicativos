@@ -14,7 +14,6 @@ import { Container, Header, Title, SubTitle, Form, Footer } from './styles'
 import * as Yup from 'yup'
 import {useNavigation } from '@react-navigation/native'
 import { userAuth } from '../../hooks/auth';
-import {database} from '../../database';
 import {StackNavigationProp} from '@react-navigation/stack';
 
 type RootStackParamList = {
@@ -39,7 +38,6 @@ export function SignIn() {
       })
 
       await schema.validate({ email, password })
-      Alert.alert('tudo certo!')
       navigation.navigate('Home');
 
       //Fazer login.
@@ -58,14 +56,6 @@ export function SignIn() {
     navigation.navigate('SignUpFirstStep');
   }
 
-  useEffect(() => {
-    async function loadData() {
-      const userCollection = database.get('users'); //qual tabela queremos
-      const users = await userCollection.query().fetch();
-      console.log(users)
-    }
-    loadData()
-  }, [])
 
   return (
     <KeyboardAvoidingView behavior="position" enabled>
