@@ -11,8 +11,6 @@ import {
    Footer,
 } from './styles';
 import { useNavigation, useRoute } from '@react-navigation/core';
-
-
 import { ConfirmAnimation } from '../ConfirmAnimation';
 
 

@@ -16,7 +16,19 @@ import {
 } from './styles'
 import { PasswordInput } from '../../../components/PasswordInput'
 import { useTheme } from 'styled-components';
-import api from '../../../services/api'
+import api from '../../../services/api';
+
+import {StackNavigationProp} from '@react-navigation/stack';
+
+type RootStackParamList = {
+  Confirmation: {
+    nextScreenRoute: string;
+      title: string;
+      message: string;
+  }
+ };
+
+ type Props = StackNavigationProp<RootStackParamList, 'Confirmation'>;
 
 interface Params {
   user: {
@@ -30,7 +42,7 @@ export function SignUpSecondStep() {
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const theme = useTheme();
-  const navigation = useNavigation();
+  const navigation = useNavigation<Props>();
   const route = useRoute();
   const {user} = route.params as Params;
   // console.warn(user)

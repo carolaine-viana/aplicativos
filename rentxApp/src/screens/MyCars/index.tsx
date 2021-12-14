@@ -17,16 +17,17 @@ import {
 import {CarDTO} from '../../dtos/CarDTO';
 import api from '../../services/api';
 import { useNavigation } from '@react-navigation/core';
-import {StackNavigationProp} from '@react-navigation/stack';
-import { RootStackParamList } from '../../@types/navigation';
-import { BackButton } from '../../components/BackButton';
 import { useTheme } from 'styled-components';
 import { StatusBar, FlatList } from 'react-native';
 import { Car } from '../../components/Car';
 import {AntDesign} from '@expo/vector-icons';
 import { LoadingAnimation } from '../../components/LoadingAnimation';
+import { BackButton } from '../../components/BackButton';
 
-type Props = StackNavigationProp<RootStackParamList, 'goBack'>;
+type RootStackParamList = {
+   goBack(): void;
+ };
+
 
 interface CarProps {
    id: string;
@@ -39,7 +40,7 @@ interface CarProps {
 export function MyCars(){ 
    const [cars, setCars] = useState<CarProps[]>([])
    const [loading, setLoading] = useState(true);
-   const navigation = useNavigation<Props>();
+   const navigation = useNavigation<RootStackParamList>();
    const theme = useTheme();
 
 

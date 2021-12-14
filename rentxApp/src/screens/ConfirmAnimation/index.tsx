@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 
-import BrandSvg from '../../assets/brand.svg';
-import LogoSvg from '../../assets/logo.svg';
+import payment from '../../assets/payment.json';
+import LottieView from 'lottie-react-native';
+import DoneSvg from '../../assets/done.svg';
+import { View } from 'react-native';
 
 import Animated, {
     useSharedValue,
@@ -13,13 +15,6 @@ import Animated, {
 import {
     Container,
 } from './styles';
-import { useNavigation } from '@react-navigation/core';
-import payment from '../../assets/payment.json';
-import LottieView from 'lottie-react-native';
-import DoneSvg from '../../assets/done.svg';
-import { View } from 'react-native';
-
-
 
 export function ConfirmAnimation() {
     const splashAnimation = useSharedValue(0); // 0 => 50

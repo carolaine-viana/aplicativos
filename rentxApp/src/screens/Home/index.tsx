@@ -14,12 +14,20 @@ import { useNavigation } from '@react-navigation/core';
 import api from '../../services/api';
 import {CarDTO} from '../../dtos/CarDTO';
 import { LoadingAnimation } from '../../components/LoadingAnimation';
+import {StackNavigationProp} from '@react-navigation/stack';
 
+type RootStackParamList = {
+   CarDetails: {
+    car
+  }
+ };
+
+type Props = StackNavigationProp<RootStackParamList, 'CarDetails'>;
 
 export function Home(){
    const [cars, setCars] = useState<CarDTO[]>([]);
    const [loading, setLoading] = useState(true)
-   const navigation = useNavigation();
+   const navigation = useNavigation<Props>();
 
 
    function handleCarDetails(car: CarDTO){

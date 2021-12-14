@@ -16,11 +16,24 @@ import {
 } from './styles'; 
 import * as Yup from 'yup';
 
+import {StackNavigationProp} from '@react-navigation/stack';
+
+type RootStackParamList = {
+  SignUpSecondStep: {
+    user: {
+      name: string;
+      email: string;
+    };
+  }
+ };
+
+ type Props = StackNavigationProp<RootStackParamList, 'SignUpSecondStep'>;
+
 export function SignUpFirstStep() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [driverLicense, setDriverLicense] = useState('');
-  const navigation = useNavigation();
+  const navigation = useNavigation<Props>();
 
 
   function handleBack() {
