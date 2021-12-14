@@ -22,7 +22,6 @@ import {
    Container,
    Header,
    CarImagens,
-   Content,
    Details,
    Description,
    Brand,
@@ -39,7 +38,6 @@ import { RootStackParamList } from '../../@types/navigation';
 import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 import { StatusBar } from 'react-native';
 import { useTheme } from 'styled-components';
-import theme from '../../styles/theme';
 
 type Props = StackScreenProps<RootStackParamList, 'CarDetails'>;
 
@@ -58,7 +56,7 @@ export function CarDetails({}: Props){
    //ver se o usuario ta usando scroll em y
    const scrollHandle = useAnimatedScrollHandler(event => {
       ScrollY.value = event.contentOffset.y; //salva a posicao do scroll pra saber onde ele ta no scroll
-      console.log(event.contentOffset.y)
+      //console.log(event.contentOffset.y)
    })
 
    const headerStyleAnimation = useAnimatedStyle(() => {
@@ -102,17 +100,20 @@ export function CarDetails({}: Props){
                {backgroundColor: theme.colors.background_secondary}
             ]}
            >
+
+                  <Animated.View style={sliderCarsStyleAnimation}>
+                     
                   <Header>
                      <BackButton onPress={handleBack} />
                   </Header>
 
-                  <Animated.View style={sliderCarsStyleAnimation}>
                     <CarImagens>
                         <ImageSlider
                            imagesUrl={car.photos}
                         />
                        </CarImagens> 
                   </Animated.View>
+
            </Animated.View>
 
          <Animated.ScrollView
@@ -131,8 +132,8 @@ export function CarDetails({}: Props){
                </Description>
 
             <Rent>
-               <Period>{car.rent.period}</Period>
-               <Price>R$ {car.rent.price}</Price>
+               <Period>{car.period}</Period>
+               <Price>R${car.price}</Price>
             </Rent>
             </Details>
 

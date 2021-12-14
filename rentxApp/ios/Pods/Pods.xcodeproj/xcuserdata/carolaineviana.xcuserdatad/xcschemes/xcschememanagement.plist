@@ -119,12 +119,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RNCMaskedView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RNGestureHandler.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>RNReanimated.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RNSVG.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -239,6 +249,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>WatermelonDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Yoga.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -254,7 +269,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>lottie-ios.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>lottie-react-native.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>react-native-safe-area-context.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>simdjson.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

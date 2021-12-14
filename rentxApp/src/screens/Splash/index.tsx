@@ -7,9 +7,7 @@ import Animated, {
     useSharedValue,
     useAnimatedStyle,
     withTiming,
-    Easing,
     interpolate,
-    Extrapolate,
     runOnJS
 } from 'react-native-reanimated';
 
@@ -54,7 +52,7 @@ export function Splash(){
     })
 
     function startApp(){
-        navigation.navigate('Home')
+        navigation.navigate('SignIn')
     }
 
     useEffect(() => {

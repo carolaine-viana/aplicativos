@@ -39,13 +39,15 @@ function AuthProvider({children}: AuthProviderProps){
             password
         })
 
-        console.warn(response.data);
-
-        const {token, user} = response.data;
-
-        // api.defaults.headers.authorization = `Bearer ${token}`;
-        api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-        setData({token, user});
+        console.log(response.data);
+        
+       const {token, user} = response.data;
+       
+       // api.defaults.headers.authorization = `Bearer ${token}`;
+       
+       //colocar no header de todas as requisicoes um cabecalho
+       api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+       setData({token, user});
     }
 
     return (

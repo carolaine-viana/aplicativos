@@ -22,11 +22,13 @@ import { Calendar, DayProps, generateInterval, MarkedDateProps} from '../../comp
 import { useNavigation, useRoute } from '@react-navigation/core';
 import { getPlataformDate } from '../../utils/getPlataformDate';
 import { CarDTO } from '../../dtos/CarDTO';
-import { RootStackParamList } from '../../@types/navigation';
-import { StackScreenProps } from '@react-navigation/stack';
+import {StackNavigationProp} from '@react-navigation/stack';
 
+type RootStackParamList = {
+    SchedulingDetails: {};
+ };
 
-type Props = StackScreenProps<RootStackParamList, 'Scheduling'>;
+ type Props = StackNavigationProp<RootStackParamList, 'SchedulingDetails'>;
 
 interface RentalPeriod {
     startFormatted: string;
@@ -37,7 +39,7 @@ interface Params {
     car: CarDTO;
  }
 
-export function Scheduling({}: Props){ 
+export function Scheduling(){ 
     const [lastSelectedDate, setlastSelectedDate] = useState<DayProps>({} as DayProps); //ultima data selecionada
     const [markedDates, setmarkedDates] = useState<MarkedDateProps>({} as MarkedDateProps)
     const [rentalPeriod, setRentalPeriod] = useState<RentalPeriod>({} as RentalPeriod)
@@ -46,7 +48,7 @@ export function Scheduling({}: Props){
     const navigation = useNavigation<Props>();
     
     const route = useRoute();
-    const {car} = route.params as Params;
+    const car = route.params as Params;
 
 
     function handleConfirmRental(){

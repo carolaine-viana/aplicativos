@@ -12,12 +12,30 @@ export type RootStackParamList = {
     option: string;
   };
   SchedulingDetails: {
-    option: string;
+    option: any;
   };
   SchedulingComplete: {
     option: string;
   };
   MyCars: {
     option: string;
+  }
+  Confirmation:{
+    option: string;
+  };
+  Profile: {
+    option: string;
+  },
+  SignUpFirstStep: {
+    option: string;
+  },
+  SignUpSecondStep: {
+    option: string;
+  },
+  SignIn: {
+    option: string;
+  },
+  goBack: {
+    option: void;
   }
 };

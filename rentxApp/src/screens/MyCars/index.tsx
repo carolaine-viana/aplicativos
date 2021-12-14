@@ -17,7 +17,7 @@ import {
 import {CarDTO} from '../../dtos/CarDTO';
 import api from '../../services/api';
 import { useNavigation } from '@react-navigation/core';
-import { StackScreenProps } from '@react-navigation/stack';
+import {StackNavigationProp} from '@react-navigation/stack';
 import { RootStackParamList } from '../../@types/navigation';
 import { BackButton } from '../../components/BackButton';
 import { useTheme } from 'styled-components';
@@ -26,7 +26,7 @@ import { Car } from '../../components/Car';
 import {AntDesign} from '@expo/vector-icons';
 import { LoadingAnimation } from '../../components/LoadingAnimation';
 
-type Props = StackScreenProps<RootStackParamList, 'MyCars'>;
+type Props = StackNavigationProp<RootStackParamList, 'goBack'>;
 
 interface CarProps {
    id: string;
@@ -36,7 +36,7 @@ interface CarProps {
    endDate: string;
 }
 
-export function MyCars({}: Props){ 
+export function MyCars(){ 
    const [cars, setCars] = useState<CarProps[]>([])
    const [loading, setLoading] = useState(true);
    const navigation = useNavigation<Props>();
@@ -75,9 +75,8 @@ export function MyCars({}: Props){
             />
 
               <Title>
-                Escolha uma {'\n'}
-                data de início e {'\n'}
-                fim do aluguel
+                Seus agendamentos, {'\n'}
+                estão aqui.
               </Title>
 
               <SubTitle>

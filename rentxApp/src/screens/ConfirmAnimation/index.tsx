@@ -7,10 +7,7 @@ import Animated, {
     useSharedValue,
     useAnimatedStyle,
     withTiming,
-    Easing,
     interpolate,
-    Extrapolate,
-    runOnJS
 } from 'react-native-reanimated';
 
 import {
@@ -26,7 +23,6 @@ import { View } from 'react-native';
 
 export function ConfirmAnimation() {
     const splashAnimation = useSharedValue(0); // 0 => 50
-    const navigation = useNavigation();
 
     const brandStyle = useAnimatedStyle(() => {
         return {
@@ -58,10 +54,6 @@ export function ConfirmAnimation() {
             ]
         }
     })
-
-    // function startApp(){
-    //     navigation.navigate('Home')
-    // }
 
     useEffect(() => {
         splashAnimation.value = withTiming(

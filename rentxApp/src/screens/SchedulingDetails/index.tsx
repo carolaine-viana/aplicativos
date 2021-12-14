@@ -42,6 +42,18 @@ import { format } from 'date-fns';
 import { getPlataformDate } from '../../utils/getPlataformDate';
 import api from '../../services/api';
 import { Alert } from 'react-native';
+import {StackNavigationProp} from '@react-navigation/stack';
+
+type RootStackParamList = {
+   Confirmation: {
+      nextScreenRoute: string,
+      title: string,
+      message: string
+   };
+ };
+
+ type Props = StackNavigationProp<RootStackParamList, 'Confirmation'>;
+
 
 interface Params {
    car: CarDTO;
@@ -52,17 +64,18 @@ interface Params {
 interface RentalPeriod{
    start: string;
    end: string;
+
 }
 
 export function SchedulingDetails(){ 
    const [loading, setLoading] = useState(false);
    const [rentalPeriod, setRentalPeriod] = useState<RentalPeriod>({} as RentalPeriod)
    const theme = useTheme();
-   const navigation = useNavigation(); 
+   const navigation = useNavigation<Props>(); 
    const route = useRoute();
    const {car, dates} = route.params as Params;
 
-   const rentTotal = Number(dates.length * car.rent.price)
+   const rentTotal = Number(dates.length * car.price)
 
     async function handleConfirmRental(){
        const response = await api.get(`/schedules_bycars/${car.id}`); //pegar os agendamentos de um carro epecifico
@@ -129,8 +142,8 @@ export function SchedulingDetails(){
                </Description>
 
             <Rent>
-               <Period>{car.rent.period}</Period>
-               <Price>R$ {car.rent.price}</Price>
+               <Period>{car.period}</Period>
+               <Price>R$ {car.price}</Price>
             </Rent>
             </Details>
 
@@ -179,7 +192,7 @@ export function SchedulingDetails(){
       <RentalPrice>
          <RentalpriceLabel>TOTAL</RentalpriceLabel>
          <RentalPriceDetails>
-            <RentalPriceQuota>R$ {car.rent.price} x {dates.length} diarias</RentalPriceQuota>
+            <RentalPriceQuota>R$ {car.price} x {dates.length} diarias</RentalPriceQuota>
             <RentalPriceTotal>R$ {rentTotal}</RentalPriceTotal>
          </RentalPriceDetails>
       </RentalPrice>

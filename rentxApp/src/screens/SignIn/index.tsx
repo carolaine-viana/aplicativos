@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {
   StatusBar,
   KeyboardAvoidingView,
@@ -12,28 +12,39 @@ import { Input } from '../../components/Input'
 import { PasswordInput } from '../../components/PasswordInput'
 import { Container, Header, Title, SubTitle, Form, Footer } from './styles'
 import * as Yup from 'yup'
-import { useNavigation } from '@react-navigation/native'
-import { userAuth } from '../../hooks/auth'
+import {useNavigation } from '@react-navigation/native'
+import { userAuth } from '../../hooks/auth';
+import {database} from '../../database';
+import {StackNavigationProp} from '@react-navigation/stack';
+
+type RootStackParamList = {
+  SignUpFirstStep: undefined;
+  Home: undefined;
+ };
+
+ type Props = StackNavigationProp<RootStackParamList, 'SignUpFirstStep'>;
 
 export function SignIn() {
   const theme = useTheme()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const navigation = useNavigation();
-  const {signIn} = userAuth();
+  const navigation = useNavigation<Props>();
+  const { signIn } = userAuth();
 
   async function handleSignIn() {
     try {
       const schema = Yup.object().shape({
-        email: Yup.string()
-          .required('Email obrigatorio')
-          .email('Digite um email valido'),
+        email: Yup.string().required('Email obrigatorio').email('Digite um email valido'),
         password: Yup.string().required('A senha é obrigatorio'),
       })
+
       await schema.validate({ email, password })
       Alert.alert('tudo certo!')
+      navigation.navigate('Home');
+
       //Fazer login.
-      signIn({email, password})
+      signIn({ email, password })
+
     } catch (error) {
       if (error instanceof Yup.ValidationError) { //se for um erro do Yup
         Alert.alert('opa', error.message);
@@ -43,9 +54,18 @@ export function SignIn() {
     }
   }
 
-  function handleNewAccount(){
+  function handleNewAccount() {
     navigation.navigate('SignUpFirstStep');
   }
+
+  useEffect(() => {
+    async function loadData() {
+      const userCollection = database.get('users'); //qual tabela queremos
+      const users = await userCollection.query().fetch();
+      console.log(users)
+    }
+    loadData()
+  }, [])
 
   return (
     <KeyboardAvoidingView behavior="position" enabled>
@@ -78,8 +98,7 @@ export function SignIn() {
             <PasswordInput
               iconName="lock"
               placeholder="Senha"
-              // secureTextEntry
-              keyboardType="visible-password"
+              // keyboardType="visible-password"
               autoCorrect={false}
               autoCapitalize="none"
               onChangeText={setPassword}

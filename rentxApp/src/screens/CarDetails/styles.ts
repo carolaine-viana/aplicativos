@@ -9,16 +9,21 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    margin-top: ${getStatusBarHeight() + 18}px;
+    /* position: absolute; */
+    margin-top: ${getStatusBarHeight() +15}px;
     margin-left: 24px;
+    /* padding-bottom: ${getStatusBarHeight() + 30}px; */
 `;
 
+
 export const CarImagens = styled.View`
-    margin-top: ${getStatusBarHeight() + 32}px;
+    /* margin-top: ${getStatusBarHeight() + 32}px; */
+    width: 100%;
+    height: 80%;
 `
 
 export const Details = styled.View`
