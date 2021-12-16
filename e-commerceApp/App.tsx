@@ -1,44 +1,40 @@
 import React from 'react';
-import theme from './src/styles/theme';
-import AppLoading from 'expo-app-loading';
-import { ThemeProvider } from 'styled-components';
 import 'react-native-gesture-handler';
 
-import {
-  useFonts,
-  Nunito_400Regular,
-  Nunito_800ExtraBold,
-  Nunito_700Bold,
-  Nunito_600SemiBold
-} from '@expo-google-fonts/nunito';
-
+import { useFonts, NunitoSans_400Regular, NunitoSans_800ExtraBold, NunitoSans_700Bold, NunitoSans_600SemiBold} from '@expo-google-fonts/nunito-sans';
 import {Halant_500Medium} from '@expo-google-fonts/halant';
+import AppLoading from 'expo-app-loading';
+import { ThemeProvider } from 'styled-components';
+import theme from './src/styles/theme';
 
 import { Routes } from './src/routes';
-import { AuthContext } from './src/services/AuthContext';
 
+import Amplify from 'aws-amplify';
+import config from './src/aws-exports';
+import { Register } from './src/screens/LoginPage/Register';
+import { Feed } from './src/screens/Feed';
+Amplify.configure(config);
+// import { withAuthenticator } from 'aws-amplify-react-native';
 
-export default function App() {
+function App() {
   // const [fontsLoaded] = useFonts({
-  //   useFonts,
-  //   Nunito_400Regular,
-  //   Nunito_800ExtraBold,
-  //   Nunito_700Bold,
-  //   Nunito_600SemiBold,
+  //   NunitoSans_400Regular,
+  //   NunitoSans_800ExtraBold,
+  //   NunitoSans_700Bold,
+  //   NunitoSans_600SemiBold,
   //   Halant_500Medium
   // })
   
-  //if(!fontsLoaded){
-    //return <AppLoading/>
-  //}
+  // if(!fontsLoaded){
+  //   return <AppLoading/>
+  // }
   
- 
   return (
-    <AuthContext.Provider value={[]}>
       <ThemeProvider theme={theme}>
         <Routes/>
     </ThemeProvider>
-    </AuthContext.Provider>
   )
 }
+
+export default App;
 

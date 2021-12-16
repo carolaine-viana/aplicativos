@@ -10,19 +10,15 @@ import {
   SubText,
   Footer,
   WrappedButton,
-  WrappedInfo,
 } from './styles'
+
 import { ButtonDetail } from '../../components/ButtonDetail'
-import { useRoute } from '@react-navigation/core'
 import { ImageSlider } from '../../components/ImageSlider'
 import { Header } from '../../components/Header'
 import { BackButton } from '../../components/BackButton';
-import { useNavigation } from '@react-navigation/core'
 
 
-export function DetailProduct() {
-  const navigation = useNavigation();
-  const route = useRoute();
+export function DetailProduct({navigation, route}) {
   const { item } = route.params;
 
   return (

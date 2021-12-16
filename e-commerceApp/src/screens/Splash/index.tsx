@@ -1,38 +1,25 @@
 import React, {useEffect} from 'react';
 
-import BrandSvg from '../../assets/brand.svg';
-import LogoSvg from '../../assets/logo.svg';
-
 import Animated, {
     useSharedValue,
     useAnimatedStyle,
     withTiming,
-    Easing,
     interpolate,
-    Extrapolate,
     runOnJS
 } from 'react-native-reanimated';
 
-import line from '../../assets/line.png';
 
-import {Image} from 'react-native';
 import LottieView from 'lottie-react-native';
 import linhabaixo from '../../assets/lottiefiles/linhabaixo.json';
 import linhacima from '../../assets/lottiefiles/linhacima.json';
-import welcome from '../../assets/lottiefiles/welcome.json';
-import shop from '../../assets/lottiefiles/shop.json';
-
-
 
 import {      
    Container, 
 } from './styles';
-import { useNavigation } from '@react-navigation/core';
 
 
-export function Splash(){ 
+export function Splash({navigation}){ 
     const splashAnimation = useSharedValue(0); // 0 => 50
-    const navigation = useNavigation();
 
     const styleFirst = useAnimatedStyle(() => {
         return{

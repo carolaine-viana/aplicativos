@@ -26,6 +26,6 @@ export const Title = styled.Text<Text>`
     font-size: ${RFValue(13)}px;
     text-transform: uppercase;
     padding: 20px 0px 15px 0px;
-    color: ${({ color, theme }) => color ? 'black' : 'white'};
+    color: ${({ color }) => color ? 'black' : 'white'};
 `;
 

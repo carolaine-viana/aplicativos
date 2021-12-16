@@ -12,7 +12,6 @@ import {
 
 import { Header } from '../../components/Header'
 
-import { useNavigation } from '@react-navigation/core'
 
 import img4 from '../../assets/img4.png'
 import img8 from '../../assets/img8.png'
@@ -22,8 +21,7 @@ import News from '../../assets/svgs/news.svg'
 import Tops from '../../assets/svgs/tops.svg'
 import Pants from '../../assets/svgs/pants.svg'
 
-export function Feed() {
-  const navigation = useNavigation()
+export function Feed({useNavigation}) {
  
   return (
     <Container>

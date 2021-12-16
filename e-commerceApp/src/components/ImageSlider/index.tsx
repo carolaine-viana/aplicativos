@@ -22,7 +22,7 @@ export function ImageSlider({imagesUrl}: Props) {
 
     const indexChanged = useRef((info: ChanceImageProps) =>{
         const index = info.viewableItems[0].index!; 
-        setImageindex(index)
+            setImageindex(index)
     })
 
      return(
@@ -54,7 +54,6 @@ export function ImageSlider({imagesUrl}: Props) {
                     onViewableItemsChanged={indexChanged.current}
                 />
                 
-
      </Container>
-       )
+    )
 } 

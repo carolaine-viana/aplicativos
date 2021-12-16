@@ -11,14 +11,38 @@ import {
 } from './styles';
 import img1 from '../../assets/img1.png';
 import { Button } from '../../components/Button';
-import { useNavigation } from '@react-navigation/core';
+import {ImageSlider} from '../../components/ImageSlider';
 
-export function LoginPage(){ 
-    const navigation = useNavigation(); 
+type ImageProp = {
+  photos: {
+    id: string
+    photo: string
+  }[]
+}
+
+export function LoginPage({navigation}){ 
+
+  // const imageURL: ImageProp = {
+  //   photos: [
+  //     {
+  //       id: '1',
+  //       photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
+  //     },
+  //     {
+  //       id: '2',
+  //       photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
+  //     },
+  //     {
+  //       id: '3',
+  //       photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
+  //     }
+  //   ]
+  // }
 
      return(
         <Container>
-            <ImageBackground
+              {/* { <ImageSlider imagesUrl={imageURL.photos} />} */}
+              <ImageBackground
                 source={img1}
                 >
             </ImageBackground>
@@ -33,13 +57,13 @@ export function LoginPage(){
                     <Footer>
                         <Button
                             title="Register"
-                            onPress={() => navigation.navigate('Feed')}
+                            onPress={() => navigation.navigate('Register')}
                         />
 
                         <Button
                             title="Login in"
                             color="white"
-                            onPress={() => navigation.navigate('Feed')}
+                            onPress={() => navigation.navigate('SignIn')}
                         />
 
                     </Footer>

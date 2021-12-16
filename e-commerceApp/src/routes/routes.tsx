@@ -7,6 +7,8 @@ import { DetailProduct } from '../screens/DetailProduct';
 import { FilterClothes } from '../screens/FilterClothes';
 import { BuyNow } from '../screens/BuyNow';
 import { Splash } from '../screens/Splash';
+import { Register } from '../screens/LoginPage/Register';
+import { ConfirmSignUp } from '../screens/ConfirmSignUp';
 
 const {Navigator, Screen} = createStackNavigator();
 
@@ -60,6 +62,23 @@ export function StackRoutes(){
                     headerShown: false,
                 }}
             />
+
+             <Screen
+                name="Register"
+                component={Register}
+                options={{
+                    headerShown: false,
+                }}
+            />
+
+            <Screen
+                name="ConfirmSignUp"
+                component={ConfirmSignUp}
+                options={{
+                    headerShown: false,
+                }}
+            />
+
         </Navigator>
        )
 } 

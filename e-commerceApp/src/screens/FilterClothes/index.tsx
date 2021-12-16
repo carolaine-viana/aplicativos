@@ -20,14 +20,12 @@ import HeartSvg from '../../assets/svgs/akar.heart.svg'
 import api from '../../services/api'
 import { Alert } from 'react-native'
 import { Load } from '../../components/Load'
-import { useNavigation } from '@react-navigation/core'
 import { ButtonFilter } from '../../components/ButtonFilter'
 import { BackButton } from '../../components/BackButton'
 
-export function FilterClothes() {
+export function FilterClothes({navigation}) {
   const [clothes, setClothes] = useState([])
   const [loading, setLoading] = useState(true)
-  const navigation = useNavigation()
   const [searchText, setsearchText] = useState('')
   const [filteredClothes, setFilteredClothes] = useState([]);
 

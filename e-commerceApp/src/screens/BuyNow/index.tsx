@@ -20,17 +20,13 @@ import {
   TextModal,
 } from './styles'
 import { Button as ButtonConfirm } from '../../components/Button'
-import { useRoute } from '@react-navigation/core';
 import {Modal, View, Pressable, Button} from 'react-native';
 import {EvilIcons} from '@expo/vector-icons';
 
 import { BackButton } from '../../components/BackButton';
-import { useNavigation } from '@react-navigation/core'
 
 
-export function BuyNow() {
-  const route = useRoute();
-  const navigation = useNavigation();
+export function BuyNow({route, navigation}) {
   const { item } = route.params;
   const [quantidade, setQuantidade] = useState(1);
   const [modalVisible, setModalVisible] = useState(false);
