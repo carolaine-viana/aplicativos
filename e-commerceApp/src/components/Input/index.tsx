@@ -29,13 +29,14 @@ export function Input({ iconName, value, ...rest }: Props) {
         <Feather
           name={iconName}
           size={24}
-          color={isFocused || isFilled ? theme.colors.failed : theme.colors.background_primary}
+          color={isFocused || isFilled ? '#626262' :  '#626262'}
         />
       </IconContainer>
       
       <InputText
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
+        placeholderTextColor='#262626'
         {...rest}
       />
     </Container>

@@ -11,8 +11,8 @@
           "EMAIL"
         ],
         "signupAttributes": [
-          "EMAIL",
-          "NICKNAME"
+          "PREFERRED_USERNAME",
+          "EMAIL"
         ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,

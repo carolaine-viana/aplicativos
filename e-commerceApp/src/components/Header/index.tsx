@@ -1,21 +1,31 @@
 import React from 'react';
 import {      
   HeaderContainer,
-    Title
+    Title,
+    ButtonLogout,
 } from './styles';
 import GroupIcon from "../../assets/svgs/group.svg";
 import BagIcon from "../../assets/svgs/bag.svg";
 import { RFValue } from 'react-native-responsive-fontsize';
-import { RectButton } from 'react-native-gesture-handler';
-import { useNavigation, useRoute } from '@react-navigation/native';
+import { Feather } from '@expo/vector-icons';
+import { Auth } from 'aws-amplify';
+
 
 interface Props {
   onPress?: () => void;
 }
 
-export function Header(){ 
-
-     return(
+export function Header({}: Props){ 
+  
+  async function signOut() {
+      try {
+          await Auth.signOut();
+      } catch (error) {
+          console.log('error signing out: ', error);
+      }
+  }
+  
+  return(
         <HeaderContainer>
           <GroupIcon
             width={RFValue(20)}
@@ -24,10 +34,14 @@ export function Header(){
           
           <Title>Basics</Title>
 
-          <BagIcon
-            width={RFValue(24)}
-            height={RFValue(24)}
+        <ButtonLogout
+          onPress={signOut}
+        >
+          <Feather
+            name="power"
+            size={20}
           />
+        </ButtonLogout>
       </HeaderContainer>
        )
 } 

@@ -1,28 +1,38 @@
 import { Auth } from 'aws-amplify';
-import React, { useState } from 'react' 
-import {View, Text, Alert} from 'react-native' 
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { useTheme } from 'styled-components';
+import React, { useState } from 'react';
+import {View} from 'react-native';
+import {Alert} from 'react-native' 
 import * as Yup from 'yup';
 import { Button } from '../../../components/Button';
+import { ConfirmAnimation } from '../../../components/ConfirmAnimation';
 import { Input } from '../../../components/Input';
 import { PasswordInput } from '../../../components/PasswordInput';
-import { Container, Header, Title, SubTitle, Form, Footer } from './styles'
+import { ConfirmSignUp } from '../../ConfirmSignUp';
+import { Container, Header, Title, SubTitle, Form, Footer} from './styles'
 
 export function Register({navigation}){ 
-  const theme = useTheme();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
-  const [nickname, setnickname] = useState('');
 
   async function signUp() {
     try {
-      await Auth.signUp({ username, password, attributes: { nickname } });
-      Alert.alert('✅ Sign-up Confirmed');
+      const schema = Yup.object().shape({
+        username: Yup.string().email('deve ser um email').required('Username obrigatorio'),
+        email: Yup.string().email('Email invalido').required('Email obrigatorio'),
+        password: Yup.string().required('Senha obrigatoria'),
+      })
 
-    } catch (error) {
+      const data = {username, email, password}
+      await schema.validate(data)
+
+      await Auth.signUp({ username, password, attributes: { email} });
+      Alert.alert('✅ Sign-up Confirmed', 'Confirm your code');
+    } catch (error) { 
       console.warn('❌ Error signing up...', error);
+      if(error instanceof Yup.ValidationError){
+        return Alert.alert('opa', error.message)
+      }
     }
   }
  
@@ -35,20 +45,10 @@ export function Register({navigation}){
            </Header>
 
            <SubTitle>
-             SignIn to have a create experience.
+             Register to have a better experience.
            </SubTitle>
 
           <Form>
-            <Input
-              iconName="user"
-              placeholder="NickName"
-              keyboardType="email-address"
-              autoCorrect={false}
-              autoCapitalize="none"
-              onChangeText={setnickname}
-              value={nickname}
-            />
-
           <Input
               iconName="user"
               placeholder="Username"
@@ -72,7 +72,6 @@ export function Register({navigation}){
             <PasswordInput
               iconName="lock"
               placeholder="Senha"
-              // keyboardType="visible-password"
               autoCorrect={false}
               autoCapitalize="none"
               onChangeText={setPassword}
@@ -85,17 +84,20 @@ export function Register({navigation}){
           <Footer>
             <Form>
                 <Button
-                  title="Sign up"
+                  title="Register"
                   onPress={signUp}
                 />
 
-                <Button
-                  title="Confirm code"
-                  color="white"
-                  onPress={() => navigation.navigate('ConfirmSignUp')}
-                />
+                  <Button
+                    title="Confirm my code"
+                    color="white"
+                    iconName="home"
+                    onPress={() => navigation.navigate('ConfirmSignUp', username)}
+                  />
             </Form>
           </Footer>
+
+          
          </>
        )
 } 

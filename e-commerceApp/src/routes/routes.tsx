@@ -9,6 +9,7 @@ import { BuyNow } from '../screens/BuyNow';
 import { Splash } from '../screens/Splash';
 import { Register } from '../screens/LoginPage/Register';
 import { ConfirmSignUp } from '../screens/ConfirmSignUp';
+import { SignIn } from '../screens/SignIn';
 
 const {Navigator, Screen} = createStackNavigator();
 
@@ -74,6 +75,14 @@ export function StackRoutes(){
             <Screen
                 name="ConfirmSignUp"
                 component={ConfirmSignUp}
+                options={{
+                    headerShown: false,
+                }}
+            />
+
+                <Screen
+                name="SignIn"
+                component={SignIn}
                 options={{
                     headerShown: false,
                 }}

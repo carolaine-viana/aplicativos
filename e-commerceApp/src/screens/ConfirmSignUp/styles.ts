@@ -35,6 +35,5 @@ export const Form = styled.View`
 
 export const Footer = styled.View`
     align-items: center;
-    background-color: ${({ theme }) => theme.colors.white};
     margin-top: ${RFValue(50)}px;
 `;

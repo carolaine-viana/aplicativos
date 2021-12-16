@@ -11,7 +11,8 @@ interface Text extends TextProps{
     color: string;
 }
 
-export const Container = styled(RectButton)<ButtonProps>` 
+
+export const Container = styled(RectButton)<ButtonProps>`
     height: 60px;
     width: 80%;
     margin-top: 25px;
@@ -28,4 +29,5 @@ export const Title = styled.Text<Text>`
     padding: 20px 0px 15px 0px;
     color: ${({ color }) => color ? 'black' : 'white'};
 `;
+
 

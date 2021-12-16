@@ -1,7 +1,7 @@
+import { useRoute } from '@react-navigation/native';
 import { Auth } from 'aws-amplify';
 import React, { useState } from 'react' 
-import {View, Text, Alert} from 'react-native' 
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { Alert } from 'react-native';
 import { useTheme } from 'styled-components';
 import * as Yup from 'yup';
 import { Button } from '../../components/Button';
@@ -11,19 +11,42 @@ import { Container, Header, Title, SubTitle, Form, Footer } from './styles'
 
 export function ConfirmSignUp({navigation}){ 
   const theme = useTheme();
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [authCode, setAuthCode] = useState('');
 
   async function confirmSignUp() {
     try {
-      await Auth.confirmSignUp(username, authCode);
-      console.warn('✅ Code confirmed');
-      navigation.navigate('Feed');
-    } catch (error) {
+      const schema = Yup.object().shape({
+        email: Yup.string().email('Email invalido').required('Email obrigatorio'),
+        authCode: Yup.number().required('Codigo obrigatorio'),
+      })
+
+      const data = {email, authCode}
+      await schema.validate(data)
+
+      await Auth.confirmSignUp(email, authCode);
+      Alert.alert('✅ Code confirmed');
+      navigation.navigate('SignIn');
+
+    } catch (error: any) {
+      if(error instanceof Yup.ValidationError){
+        return Alert.alert('opa', error.message)
+      }
+
       console.warn(
         '❌ Verification code does not match. Please enter a valid verification code.',
         error.code
       );
+
+    }
+  }
+
+  async function resendConfirmationCode(username: string){
+    try{
+      await Auth.resendSignUp(username)
+      Alert.alert('Reenviado')
+    }catch{
+      Alert.alert('nao deu')
     }
   }
 
@@ -45,14 +68,13 @@ export function ConfirmSignUp({navigation}){
               keyboardType="email-address"
               autoCorrect={false}
               autoCapitalize="none"
-              onChangeText={setUsername}
-              value={username}
+              onChangeText={setEmail}
+              value={email}
             />
 
             <PasswordInput
               iconName="lock"
               placeholder="CODE"
-              // keyboardType="visible-password"
               autoCorrect={false}
               autoCapitalize="none"
               onChangeText={setAuthCode}
@@ -67,6 +89,9 @@ export function ConfirmSignUp({navigation}){
               color="white"
               onPress={confirmSignUp}
             />
+
+            <SubTitle onPress={resendConfirmationCode}>Resend my code.</SubTitle>
+            
           </Footer>
 
          </>

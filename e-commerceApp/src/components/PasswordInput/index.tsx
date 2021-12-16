@@ -35,7 +35,7 @@ export function PasswordInput({ iconName, value, ...rest }: Props) {
         <Feather
           name={iconName}
           size={24}
-          color={(isFocused || isFilled) ? theme.colors.failed : theme.colors.background_primary}
+          color={(isFocused || isFilled) ? '#626262' : '#626262'}
         />
       </IconContainer>
 
@@ -44,6 +44,7 @@ export function PasswordInput({ iconName, value, ...rest }: Props) {
         onBlur={handleInputBlur}
         secureTextEntry={isPasswordVisible}
         autoCorrect={false}
+        placeholderTextColor='#262626'
         {...rest}
       />
 
@@ -52,7 +53,7 @@ export function PasswordInput({ iconName, value, ...rest }: Props) {
           <Feather
             name={isPasswordVisible ? 'eye' : 'eye-off'}
             size={24}
-            color={theme.colors.background_primary}
+            color='#626262'
           />
         </IconContainer>
       </BorderlessButton>

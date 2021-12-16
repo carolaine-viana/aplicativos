@@ -19,11 +19,10 @@ export default {
   },
 
   fonts: {
-    primary_400: 'Nunito_400Regular',
-    primary_600: 'Nunito_600SemiBold',
-    primary_700: 'Nunito_700Bold',
-    primary_800: 'Nunito_800ExtraBold',
-
+    primary_400: 'NunitoSans_400Regular',
+    primary_600: 'NunitoSans_600SemiBold',
+    primary_700: 'NunitoSans_700Bold',
+    primary_800: 'NunitoSans_800ExtraBold',
     secondary_500: 'Halant_500Medium',
   },
 };

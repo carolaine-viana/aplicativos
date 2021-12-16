@@ -21,7 +21,7 @@ import News from '../../assets/svgs/news.svg'
 import Tops from '../../assets/svgs/tops.svg'
 import Pants from '../../assets/svgs/pants.svg'
 
-export function Feed({useNavigation}) {
+export function Feed({navigation}) {
  
   return (
     <Container>

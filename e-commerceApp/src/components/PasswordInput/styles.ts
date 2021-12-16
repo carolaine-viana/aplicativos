@@ -13,19 +13,20 @@ export const IconContainer = styled.View`
     align-items: center;
     margin-right: 2px;
     margin-left: 2px;
-
-    background-color: ${({ theme }) => theme.colors.line};
-    border-radius: 50px;
+    /* background-color: ${({ theme }) => theme.colors.line}; */
+    background-color: #262626;
 `;
 
 export const InputText = styled.TextInput`
     flex: 1;
-    background-color: ${({ theme }) => theme.colors.background_secondary};
-    color: ${({ theme }) => theme.colors.background_primary};
+    /* background-color: ${({ theme }) => theme.colors.background_secondary}; */
+    /* color: ${({ theme }) => theme.colors.background_primary}; */
+    color: #676767;
     font-family: ${({ theme }) => theme.fonts.primary_400};
     font-size: ${RFValue(15)}px;
     padding: 0 23px;
-    border-radius: 3px;
     margin-left: 5px;
+    background-color: #262626;
+
 `;
 
