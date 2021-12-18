@@ -46,16 +46,19 @@ export function Home(){
           .get(`cars/sync/pull?lastPulledVersion=${lastPulledAt || 0}`);
           
           const { changes, latestVersion } = response.data;
+          // console.log(changes)
+          //console.log(latestVersion)
           return { changes, timestamp: latestVersion }
         },
         pushChanges: async ({ changes }) => {
           const user = changes.users;
-          await api.post('/users/sync', user);
+          await api.post('/users/sync', user)
+          .catch(console.log);
         },
       });
     }
- 
 
+ 
    useEffect(() => {
       let isMounted = true;
       
@@ -64,7 +67,6 @@ export function Home(){
           const carCollection = database.get<ModelCar>('cars');
           const cars = await carCollection.query().fetch();
           
-  
           if(isMounted){
             setCars(cars);
           }
@@ -88,7 +90,6 @@ export function Home(){
         offlineSynchronize();
       }
     },[netInfo.isConnected])
-  
 
 
      return(

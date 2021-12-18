@@ -14,45 +14,54 @@ import {
    CarFooterDate,
    CarFooterPeriod,
 } from './styles';
-import {CarDTO} from '../../dtos/CarDTO';
 import api from '../../services/api';
-import { useNavigation } from '@react-navigation/core';
+import { useNavigation, useIsFocused} from '@react-navigation/core';
 import { useTheme } from 'styled-components';
 import { StatusBar, FlatList } from 'react-native';
 import { Car } from '../../components/Car';
 import {AntDesign} from '@expo/vector-icons';
 import { LoadingAnimation } from '../../components/LoadingAnimation';
 import { BackButton } from '../../components/BackButton';
+import {Car as ModelCar} from '../../database/model/Car';
+import {format, parseISO} from 'date-fns';
 
 type RootStackParamList = {
    goBack(): void;
  };
 
 
-interface CarProps {
+interface DataProps {
    id: string;
-   user_id: string;
-   car: CarDTO;
-   startDate: string;
-   endDate: string;
+   car: ModelCar;
+   start_date: string;
+   end_date: string;
 }
 
 export function MyCars(){ 
-   const [cars, setCars] = useState<CarProps[]>([])
+   const [cars, setCars] = useState<DataProps[]>([])
    const [loading, setLoading] = useState(true);
    const navigation = useNavigation<RootStackParamList>();
    const theme = useTheme();
+   const screenIsFocus = useIsFocused();
 
 
    function handleBack(){
       navigation.goBack();
-  }
+   }
 
    useEffect(() => {
       async function fetchCars(){
          try{
-            const response = await api.get('/schedules_byuser?user_id=1');
-            setCars(response.data)
+            const response = await api.get('/rentals');
+            const dataFormatted = response.data.map((data: DataProps) => {
+               return{
+                  id: data.id,
+                  car: data.car,
+                  start_date: format(parseISO(data.start_date), 'dd/MM/yyyyy'),
+                  end_date: format(parseISO(data.end_date), 'dd/MM/yyyyy'),
+               }
+            })
+            setCars(dataFormatted)
          }catch(error){
             console.log(error)
          }finally{
@@ -60,7 +69,7 @@ export function MyCars(){
          }
       }
       fetchCars();
-   }, [])
+   }, [screenIsFocus])
 
      return(
         <Container>
@@ -102,14 +111,14 @@ export function MyCars(){
                      <CarFooter>
                         <CarFooterTitle>Periodo</CarFooterTitle>
                         <CarFooterPeriod>
-                           <CarFooterDate>{item.startDate}</CarFooterDate>
+                           <CarFooterDate>{item.start_date}</CarFooterDate>
                            <AntDesign
                               name="arrowright"
                               size={20}
                               color={theme.colors.title}
                               style={{marginHorizontal: 10}}
                            />
-                           <CarFooterDate>{item.endDate}</CarFooterDate>
+                           <CarFooterDate>{item.end_date}</CarFooterDate>
                         </CarFooterPeriod>
                      </CarFooter>
                   </CarWrapper>

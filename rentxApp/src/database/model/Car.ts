@@ -7,6 +7,9 @@ class Car extends Model {
     @field('name')
     name!: string;
 
+    @field('brand')
+    brand!: string;
+
     @field('about')
     about!: string;
 
@@ -20,7 +23,7 @@ class Car extends Model {
     price!: number;
 
     @field('thumbnail')
-    thumbnail!: number;
+    thumbnail!: string;
 }
 
 export {Car}

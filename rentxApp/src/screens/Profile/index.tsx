@@ -26,18 +26,24 @@ import { userAuth } from '../../hooks/auth';
 import * as ImagePicker from 'expo-image-picker';
 import { Button } from '../../components/Button';
 import * as Yup from 'yup';
+import { useNetInfo } from '@react-native-community/netinfo';
 
 export function Profile() {
-    const {user, signOut, updateUser} = userAuth();
+    const {user, signOut, updatedUser} = userAuth();
     const theme = useTheme();
     const navigation = useNavigation();
     const [option, setOption] = useState<'dataEdit' | 'passwordEdit'>('dataEdit');
     const [avatar, setAvatar] = useState(user.avatar); //pega o avatar padrao q vier
     const [name, setName] = useState(user.name);
     const [driverLicense, setDriverLicense] = useState(user.driver_license);
+    const netInfo = useNetInfo();
 
     function handleOptionChange(optionSelected: 'dataEdit' | 'passwordEdit') {
-        setOption(optionSelected)
+        if(netInfo.isConnected == true && optionSelected === 'passwordEdit'){ //se for atualizar a senha sem internet
+            Alert.alert('Você está Offline!', 'Para mudar a senha, conect-se a internet')
+        }else{
+            setOption(optionSelected)
+        }
     }
 
     async function handleAvatarSelect(){
@@ -80,7 +86,7 @@ export function Profile() {
             const data = {name, driverLicense};
             await schema.validate(data);
             
-            await updateUser({
+            await updatedUser({
                 id: user.id,
                 user_id: user.user_id,
                 email: user.email,
@@ -139,8 +145,7 @@ export function Profile() {
                             <Option
                                 active={option === 'dataEdit'}
                                 onPress={() => handleOptionChange('dataEdit')}
-                            //ou: setOption(optionSelected)
-
+                                //ou: setOption(optionSelected)
                             >
                                 <OptionTitle active={option === 'dataEdit'}>Dados</OptionTitle>
                             </Option>

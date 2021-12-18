@@ -22,7 +22,8 @@ interface AuthContextData {
     user: User;
     signIn: (credencials: SignInCredentials) => Promise<void>;
     signOut: () => Promise<void>;
-    updateUser: (user: User) => Promise<void>;
+    updatedUser: (user: User) => Promise<void>;
+    loading: boolean;
 }
 
 interface AuthProviderProps {
@@ -33,6 +34,7 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 function AuthProvider({children}: AuthProviderProps){
     const [data, setData] = useState<User>({} as User);
+    const [loading, setLoading] = useState(true)
 
     async function signIn({email, password}: SignInCredentials){
         try{
@@ -82,41 +84,43 @@ function AuthProvider({children}: AuthProviderProps){
         }
     }
 
-    async function updateUser(user: User){
-        try{
-            const userCollection = database.get<ModelUser>('users');
-            await database.action(async () => {
-                const userSelected = await userCollection.find(user.id); //user q quero editar
-                await userSelected.update((userData) => {
-                    userData.name = user.name,
-                    userData.driver_license = user.driver_license,
-                    userData.avatar = user.avatar
-                })
-            })
-            setData(user);
-
-        }catch(error: any){
-            console.log(error)
-            throw new Error(error)
+    async function updatedUser(user: User) {
+        try {
+          const userCollection = database.get<ModelUser>('users');
+          await database.write(async () => {
+            const userSelected = await userCollection.find(user.id);
+            await userSelected.update(( userData ) => {
+              userData.name = user.name,
+              userData.driver_license = user.driver_license,
+              userData.avatar = user.avatar
+            });
+          });
+          setData(user);
+        } catch (error: any) {      
+          throw new Error(error);
         }
-    }
+      }
+
 
     useEffect(() => {
         async function loadUserData() {
             const userCollection = database.get<ModelUser>('users');
             const response = await userCollection.query().fetch();
+           
             if(response.length > 0) { //se o user ta logado
                 const userData = response[0]._raw as unknown as User; //pego o 1 user logado
                 api.defaults.headers.common['Authorization'] = `Bearer ${userData.token}`;
                 setData(userData)
+                setLoading(false)
             }
             //console.log("usuario logado", response)
         }
         loadUserData();
     }, [])
 
+
     return (
-        <AuthContext.Provider value={{user: data, signIn, signOut, updateUser}}>
+        <AuthContext.Provider value={{user: data, signIn, signOut, updatedUser, loading}}>
             {children}
         </AuthContext.Provider>
     )
