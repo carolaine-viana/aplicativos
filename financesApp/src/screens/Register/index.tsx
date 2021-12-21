@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 //components
 import { Button } from "../../components/Form/Button";
-import { CategoryelectButton } from "../../components/Form/CategoryelectButton";
 import { InputForm } from "../../components/Form/InputForm";
 import { TransactionTypeButton } from "../../components/Form/TransactionTypeButton";
 import { CategorySelect } from "../CategorySelect";
@@ -26,6 +25,7 @@ import {
   TransactionsTypes,
 } from "./styles";
 import { useAuth } from "../../hooks/auth";
+import { CategorySelectButton } from "../../components/Form/CategorySelectButton";
 
 interface FormData {
   name: string;
@@ -153,7 +153,8 @@ export function Register() {
                 isActive={transactionType === "negative"}
               />
             </TransactionsTypes>
-            <CategoryelectButton
+            <CategorySelectButton
+              testID="button-category"
               title={category.name}
               onPress={handleOpenSelectCategoryModal}
             />
@@ -161,7 +162,7 @@ export function Register() {
           <Button title="Enviar" onPress={handleSubmit(handleRegister)} />
         </Form>
 
-        <Modal visible={categoryModalOpen}>
+        <Modal testID="modal-category" visible={categoryModalOpen}>
           <CategorySelect
             category={category}
             setCategory={setcategory}

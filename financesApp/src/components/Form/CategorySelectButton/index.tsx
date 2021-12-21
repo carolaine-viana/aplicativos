@@ -4,15 +4,16 @@ import {
    Category,
    Icon,
 } from './styles';
+import {RectButtonProps} from 'react-native-gesture-handler';
 
-interface Props {
+interface Props extends RectButtonProps{
     title: string;
     onPress: () => void;
 }
 
-export function CategoryelectButton({title, onPress}: Props){ 
+export function CategorySelectButton({title, testID, onPress}: Props){ 
      return(
-        <Container onPress={onPress}>
+        <Container onPress={onPress} testID={testID}>
             <Category>
                 {title}
             </Category>
