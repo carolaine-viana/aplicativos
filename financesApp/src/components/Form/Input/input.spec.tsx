@@ -24,7 +24,7 @@ describe('Input Component', () => {
                 wrapper: Providers
             }
         )
-        debug()
+        // debug()
         const inputComponent = getByTestId('input-email')
         expect(inputComponent.props.style[0].borderColor).toEqual(theme.colors.attention)//dentro do estilo ele retorna um vetor
 
