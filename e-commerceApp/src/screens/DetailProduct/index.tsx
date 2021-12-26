@@ -9,7 +9,6 @@ import {
   Text,
   SubText,
   Footer,
-  WrappedButton,
 } from './styles'
 
 import { ButtonDetail } from '../../components/ButtonDetail'
@@ -53,6 +52,7 @@ export function DetailProduct({navigation, route}) {
             title="wishlist"
             color="white"
             type="HeartButton"
+            onPress={() => {}}
           />
 
           <ButtonDetail

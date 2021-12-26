@@ -48,6 +48,7 @@ export function SignIn({navigation}){
 
           <Form>
             <Input
+              testID='input-email'
               iconName="mail"
               placeholder="E-mail"
               keyboardType="email-address"
@@ -58,6 +59,7 @@ export function SignIn({navigation}){
             />
 
             <PasswordInput
+              testID='input-senha'
               iconName="lock"
               placeholder="CODE"
               // keyboardType="visible-password"
@@ -70,6 +72,7 @@ export function SignIn({navigation}){
 
               <Footer>
                   <Button
+                    testID='loginclick'
                     title="Login"
                     color="white"
                     onPress={confirmSignIn}

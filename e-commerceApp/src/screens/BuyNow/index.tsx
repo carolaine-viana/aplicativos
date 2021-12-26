@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Header } from '../../components/Header'
+import { Header } from '../../components/Header';
+import {Alert} from 'react-native';
 import {
   ImageBackground,
   ContainerDescription,
@@ -117,7 +118,7 @@ export function BuyNow({route, navigation}) {
               <Footer>
                 <ButtonConfirm
                   title="confirmar"
-                  onPress={null}
+                  onPress={() => Alert.alert('Pedido feito! ✅ ')}
                 />
               </Footer>
 
@@ -134,6 +135,7 @@ export function BuyNow({route, navigation}) {
         modalVisible ? null: 
         (
           <ButtonConfirm
+            testId="click-test"
             title="Buy now"
             onPress={() => setModalVisible(true)}
           /> 

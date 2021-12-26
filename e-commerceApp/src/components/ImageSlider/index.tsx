@@ -8,9 +8,12 @@ import {
     CarImage,
 } from './styles';
 
-interface Props {
-    imagesUrl: string[];
-}
+type Props = {
+    imagesUrl: {
+      id: string
+      photo: string
+    }[]
+  }
 
 interface ChanceImageProps {
     viewableItems: ViewToken[];
@@ -29,9 +32,9 @@ export function ImageSlider({imagesUrl}: Props) {
         <Container>
         <ImageIndexes>
             {
-                imagesUrl.map((_, index) => (
+                imagesUrl.map((item, index) => (
                     <ImageIndex
-                        key={String(index)}
+                            key={item.id}
                         active={index === imageIndex}
                     />
                 ))
@@ -40,7 +43,7 @@ export function ImageSlider({imagesUrl}: Props) {
 
                 <FlatList
                     data={imagesUrl}
-                    keyExtractor={key => key}
+                    keyExtractor={item => item.id}
                     renderItem={({item}) => (
                         <CardImageWrapper>
                         <CarImage

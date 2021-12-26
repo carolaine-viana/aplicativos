@@ -4,23 +4,26 @@ import {
    Title,
 } from './styles';
 
+import {
+  TouchableOpacity,
+  TouchableOpacityProps,
+} from 'react-native';
 
-interface Props {
+import { Feather } from '@expo/vector-icons';
+
+
+interface ButtonProps extends TouchableOpacityProps {
     title: string;
     color?: string;
     onPress: () => void;
     iconName?: React.ComponentProps<typeof Feather>['name'];
 }
 
-import { Feather } from '@expo/vector-icons';
 
-
-export function Button({title, color, iconName, onPress, ...rest}: Props){ 
+export function Button({title, color, iconName, testID, onPress, ...rest}: ButtonProps){ 
      return(
-      <>
-        <Container {...rest} color={color} onPress={onPress}>
+        <Container color={color} onPress={onPress} testID={testID} {...rest}>
             <Title color={color}>{title}</Title>
          </Container>
-         </>
        )
 } 

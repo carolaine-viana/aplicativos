@@ -15,37 +15,38 @@ import {ImageSlider} from '../../components/ImageSlider';
 
 type ImageProp = {
   photos: {
-    id: string
-    photo: string
+    id: number;
+    photo: string;
   }[]
 }
 
 export function LoginPage({navigation}){ 
 
-  // const imageURL: ImageProp = {
-  //   photos: [
-  //     {
-  //       id: '1',
-  //       photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
-  //     },
-  //     {
-  //       id: '2',
-  //       photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
-  //     },
-  //     {
-  //       id: '3',
-  //       photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
-  //     }
-  //   ]
-  // }
+    // const imageURL: ImageProp = {
+    //     photos: [
+    //       {
+    //         id: 1,
+    //         photo: 'https://avatars.githubusercontent.com/u/65136543?v=4',
+    //       },
+    //       {
+    //         id: 2,
+    //         photo: 'https://avatars.githubusercontent.com/u/65136543?v=4',
+    //       },
+    //       {
+    //         id: 3,
+    //         photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
+    //       }
+    //     ]
+    //   }
 
      return(
         <Container>
-              {/* { <ImageSlider imagesUrl={imageURL.photos} />} */}
               <ImageBackground
                 source={img1}
                 >
             </ImageBackground>
+
+            {/* <ImageSlider imagesUrl={imageURL.photos} /> */}
 
                 <Content>
                     <ContainerDescription>
@@ -61,6 +62,7 @@ export function LoginPage({navigation}){
                         />
 
                         <Button
+                            testID="button-add"
                             title="Login in"
                             color="white"
                             onPress={() => navigation.navigate('SignIn')}

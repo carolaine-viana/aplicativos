@@ -57,7 +57,3 @@ export const Footer = styled.View`
     align-items: center;
 `;
 
-export const WrappedButton = styled.View`
-    
-`
-
