@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const AuthContext = createContext([]);
 
-function AuthProvider({children}){
+function AuthProvider({children}: any){
     const [itensCheckout, setitensCheckout] = useState([]);
     
     return(

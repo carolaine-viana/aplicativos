@@ -12,6 +12,7 @@ import {
 import img1 from '../../assets/img1.png';
 import { Button } from '../../components/Button';
 import {ImageSlider} from '../../components/ImageSlider';
+import { useNavigation } from '@react-navigation/native';
 
 type ImageProp = {
   photos: {
@@ -20,24 +21,8 @@ type ImageProp = {
   }[]
 }
 
-export function LoginPage({navigation}){ 
-
-    // const imageURL: ImageProp = {
-    //     photos: [
-    //       {
-    //         id: 1,
-    //         photo: 'https://avatars.githubusercontent.com/u/65136543?v=4',
-    //       },
-    //       {
-    //         id: 2,
-    //         photo: 'https://avatars.githubusercontent.com/u/65136543?v=4',
-    //       },
-    //       {
-    //         id: 3,
-    //         photo: 'https://avatars.githubusercontent.com/u/65136543?v=4'
-    //       }
-    //     ]
-    //   }
+export function LoginPage(){ 
+    const navigation = useNavigation()
 
      return(
         <Container>

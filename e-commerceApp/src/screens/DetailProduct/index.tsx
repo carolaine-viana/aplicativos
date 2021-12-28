@@ -15,10 +15,13 @@ import { ButtonDetail } from '../../components/ButtonDetail'
 import { ImageSlider } from '../../components/ImageSlider'
 import { Header } from '../../components/Header'
 import { BackButton } from '../../components/BackButton';
+import { useNavigation, useRoute } from '@react-navigation/native'
 
 
-export function DetailProduct({navigation, route}) {
+export function DetailProduct() {
+  const route = useRoute()
   const { item } = route.params;
+  const navigation = useNavigation();
 
   return (
     <Container>

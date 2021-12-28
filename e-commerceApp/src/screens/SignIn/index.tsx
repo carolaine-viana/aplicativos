@@ -6,10 +6,13 @@ import { Button } from '../../components/Button';
 import { Input } from '../../components/Input';
 import { PasswordInput } from '../../components/PasswordInput';
 import { Container, Header, Title, SubTitle, Form, Footer } from './styles'
+import { useNavigation } from '@react-navigation/native';
 
-export function SignIn({navigation}){ 
+
+export function SignIn(){ 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigation = useNavigation()
 
   async function confirmSignIn() {
     try {
@@ -36,7 +39,6 @@ export function SignIn({navigation}){
   }
 
      return(
-       <>
         <Container>
            <Header>
              <Title>Login</Title>
@@ -78,9 +80,6 @@ export function SignIn({navigation}){
                     onPress={confirmSignIn}
                   />
               </Footer>
-
             </Container>
-
-         </>
        )
 } 

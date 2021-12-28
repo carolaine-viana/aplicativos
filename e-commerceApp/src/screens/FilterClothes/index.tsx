@@ -22,12 +22,34 @@ import { Alert } from 'react-native'
 import { Load } from '../../components/Load'
 import { ButtonFilter } from '../../components/ButtonFilter'
 import { BackButton } from '../../components/BackButton'
+import { useNavigation} from '@react-navigation/native'
+import {FlatList} from 'react-native';
+import { ClothesDTO } from '../../dtos/CarDTO'
 
-export function FilterClothes({navigation}) {
-  const [clothes, setClothes] = useState([])
+interface Params {
+  clothes: ClothesDTO;
+}
+
+interface Data {
+  brand: string;
+  price: string;
+  figure: string;
+  category: category;
+}
+
+interface category {
+  name: string;
+  type: string;
+}
+
+export function FilterClothes() {
+  const [clothes, setClothes] = useState<ClothesDTO>({} as ClothesDTO)
   const [loading, setLoading] = useState(true)
   const [searchText, setsearchText] = useState('')
-  const [filteredClothes, setFilteredClothes] = useState([]);
+  const [filteredClothes, setFilteredClothes] = useState<Data[]>([]);
+  const navigation = useNavigation()
+
+  console.log(clothes.price)
 
 
   useEffect(() => {
@@ -35,15 +57,18 @@ export function FilterClothes({navigation}) {
       try {
         const response = await api.get('/ecommerce')
         setClothes(response.data)
+        console.warn('aqui', clothes.category[0].type)
         setFilteredClothes(response.data)
-      } catch (error) {
+      } catch (error: any) {
         Alert.alert('nao foi')
+        console.warn(error.message)
       } finally {
         setLoading(false)
       }
     }
     fetchClothes()
   }, [])
+
 
   function handleFilterClothes(text = '') {
     setsearchText(text)
@@ -128,10 +153,12 @@ export function FilterClothes({navigation}) {
 
         {loading ? (
           <Load />
+          
         ) : (
-          <ClothesList
+          <FlatList
             data={filteredClothes}
-            keyExtractor={(item) => String(item.id)}
+            keyExtractor={item => item.id}
+            showsVerticalScrollIndicator={false}
             renderItem={({ item }) => (
               <WrappedButton
                 onPress={() => navigation.navigate('DetailProduct', { item })}
@@ -152,7 +179,6 @@ export function FilterClothes({navigation}) {
                     <HeartSvg />
                   </ContainerSvg>
                 </CardContainer>
-                
               </WrappedButton>
             )}
           />

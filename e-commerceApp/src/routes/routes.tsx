@@ -15,7 +15,7 @@ const {Navigator, Screen} = createStackNavigator();
 
 export function StackRoutes(){ 
      return(
-        <Navigator initialRouteName="LoginPage">
+        <Navigator initialRouteName="Splash">
             <Screen
                 name="Splash"
                 component={Splash}
