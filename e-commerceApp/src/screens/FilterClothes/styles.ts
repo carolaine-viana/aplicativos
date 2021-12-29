@@ -12,12 +12,13 @@ export const Container = styled.View`
 export const ContainerInput = styled.View`
     width: 100%;
     height: ${RFValue(40)}px;;
-    padding: ${RFValue(10)}px;;
+    padding: ${RFValue(10)}px;
 `;
 
 export const Input = styled.TextInput`
     border-bottom-width: 1px;
     padding: 10px;
+    height: 40px;
 `;
 
 export const ContainerButton = styled.View`
@@ -48,7 +49,7 @@ export const WrappedButton = styled(RectButton)`
 `;
 
 export const CardContainer = styled.View`
-    width: ${Dimensions.get('window').width}px;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -65,7 +66,8 @@ export const ImageCard = styled.Image`
 `;
 
 export const ContainerInfo = styled.View`
-    
+    margin-left: ${RFValue(5)}px;
+    width: 50%;
 `;
 
 export const Title = styled.Text`

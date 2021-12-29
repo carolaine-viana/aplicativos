@@ -24,7 +24,7 @@ import { ButtonFilter } from '../../components/ButtonFilter'
 import { BackButton } from '../../components/BackButton'
 import { useNavigation} from '@react-navigation/native'
 import {FlatList} from 'react-native';
-import { ClothesDTO } from '../../dtos/CarDTO'
+import { ClothesDTO } from '../../dtos/ClothesDTO'
 
 interface Params {
   clothes: ClothesDTO;
@@ -43,21 +43,17 @@ interface category {
 }
 
 export function FilterClothes() {
-  const [clothes, setClothes] = useState<ClothesDTO>({} as ClothesDTO)
+  const [clothes, setClothes] = useState<ClothesDTO[]>([] as ClothesDTO);
   const [loading, setLoading] = useState(true)
   const [searchText, setsearchText] = useState('')
   const [filteredClothes, setFilteredClothes] = useState<Data[]>([]);
   const navigation = useNavigation()
-
-  console.log(clothes.price)
-
 
   useEffect(() => {
     async function fetchClothes() {
       try {
         const response = await api.get('/ecommerce')
         setClothes(response.data)
-        console.warn('aqui', clothes.category[0].type)
         setFilteredClothes(response.data)
       } catch (error: any) {
         Alert.alert('nao foi')
@@ -90,17 +86,17 @@ export function FilterClothes() {
   }
 
   function handleFilterTops(){
-    const filtro = clothes.filter((item) => item.category[0].type === 'Tops')
+    const filtro = clothes.filter((item) => item.category.type === 'Tops')
     setFilteredClothes(filtro)
   }
 
   function handleFilterPants(){
-    const filtro = clothes.filter((item) => item.category[0].type === 'Pants')
+    const filtro = clothes.filter((item) => item.category.type === 'Pants')
     setFilteredClothes(filtro)
   }
 
   function handleFilterJackets(){
-    const filtro = clothes.filter((item) => item.category[0].type === 'Jackets')
+    const filtro = clothes.filter((item) => item.category.type === 'Jackets')
     setFilteredClothes(filtro)
   }
 
@@ -114,6 +110,7 @@ export function FilterClothes() {
       <ContainerInput>
         <Input
           placeholder="SEARCH PRODUCTS"
+          placeholderTextColor="black"
           value={searchText}
           onChangeText={handleFilterClothes}
         />
@@ -146,7 +143,11 @@ export function FilterClothes() {
       </ContainerButton>
 
       <HeaderInfo>
-          <Title>search results for: {searchText}</Title>
+        {
+          !!searchText&&
+            <Title>search results for: {searchText}</Title>
+        }
+        
           <Title>Results {filteredClothes.length}</Title>
         </HeaderInfo>
 
@@ -175,9 +176,9 @@ export function FilterClothes() {
                     <Price>R${item.price}</Price>
                   </ContainerInfo>
 
-                  <ContainerSvg>
+                  {/* <ContainerSvg>
                     <HeartSvg />
-                  </ContainerSvg>
+                  </ContainerSvg> */}
                 </CardContainer>
               </WrappedButton>
             )}

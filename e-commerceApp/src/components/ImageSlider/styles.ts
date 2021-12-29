@@ -37,6 +37,6 @@ export const CardImageWrapper = styled.View`
 export const CarImage = styled.Image`
     width: ${RFPercentage(50)};;
     height: ${RFPercentage(50)};
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 `;

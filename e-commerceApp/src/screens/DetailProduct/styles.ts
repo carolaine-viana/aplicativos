@@ -15,7 +15,7 @@ export const ImageContainer = styled.View`
 export const ContainerTopInfo = styled.View`
     flex-direction: row;
     justify-content: space-between;
-    padding: 10px 20px 0px 10px;
+    padding: 30px 20px 0px 10px;
 `;
 
 export const Title = styled.Text`
@@ -38,7 +38,7 @@ export const Content = styled.ScrollView`
 
 export const Text = styled.Text`
     font-family: ${({ theme }) => theme.fonts.primary_800};
-    font-size: ${RFValue(18)}px;
+    font-size: ${RFValue(15)}px;
     line-height: ${RFValue(23)}px;
     font-weight: bold;
 `;

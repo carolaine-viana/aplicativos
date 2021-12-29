@@ -1,6 +1,7 @@
 import styled from 'styled-components/native';
 import {RectButton, RectButtonProps} from 'react-native-gesture-handler';
 import { RFValue } from 'react-native-responsive-fontsize';
+import {TextProps} from 'react-native';
 
 interface ButtonProps extends RectButtonProps{
     color: string;
@@ -11,9 +12,10 @@ interface Text extends TextProps{
     color: string;
 }
 
-export const WrappedButton = styled.View<ButtonProps>`
+export const WrappedButton = styled.View`
     flex: 1;
     padding: 0px 10px 10px 10px;
+    padding: 30px;
 `
 
 export const Container = styled(RectButton)<ButtonProps>` 
