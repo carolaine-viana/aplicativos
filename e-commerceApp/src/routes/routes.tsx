@@ -8,8 +8,8 @@ import { FilterClothes } from '../screens/FilterClothes';
 import { BuyNow } from '../screens/BuyNow';
 import { Splash } from '../screens/Splash';
 import { Register } from '../screens/LoginPage/Register';
-import { ConfirmSignUp } from '../screens/ConfirmSignUp';
-import { SignIn } from '../screens/SignIn';
+import { ConfirmSignUp } from '../screens/LoginPage/ForgotPassword';
+import { SignIn } from '../screens/LoginPage/SignIn';
 
 const {Navigator, Screen} = createStackNavigator();
 

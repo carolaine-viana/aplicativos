@@ -9,10 +9,6 @@ import theme from './src/styles/theme';
 import { Routes } from './src/routes';
 import { Feed } from './src/screens/Feed';
 
-//import Amplify from 'aws-amplify';
-//import config from './src/aws-exports';
-//Amplify.configure(config);
-// import { withAuthenticator } from 'aws-amplify-react-native';
 
 function App() {
   const [fontsLoaded] = useFonts({
@@ -29,7 +25,7 @@ function App() {
   
   return (
       <ThemeProvider theme={theme}>
-        <Feed/>
+        <Routes/>
     </ThemeProvider>
   )
 }

@@ -8,8 +8,7 @@ import GroupIcon from "../../assets/svgs/group.svg";
 import BagIcon from "../../assets/svgs/bag.svg";
 import { RFValue } from 'react-native-responsive-fontsize';
 import { Feather } from '@expo/vector-icons';
-import { Auth } from 'aws-amplify';
-
+import auth from '@react-native-firebase/auth'
 
 interface Props {
   onPress?: () => void;
@@ -17,12 +16,9 @@ interface Props {
 
 export function Header({}: Props){ 
   
-  async function signOut() {
-      try {
-          await Auth.signOut();
-      } catch (error) {
-          console.log('error signing out: ', error);
-      }
+  async function handleLogout() {
+    await auth().signOut();
+    return console.warn('Conta deslogada! ✅ ')
   }
   
   return(
@@ -35,7 +31,7 @@ export function Header({}: Props){
           <Title>Basics</Title>
 
         <ButtonLogout
-          onPress={signOut}
+          onPress={handleLogout}
         >
           <Feather
             name="power"

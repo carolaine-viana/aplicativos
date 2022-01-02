@@ -24,6 +24,7 @@ type ImageProp = {
 export function LoginPage(){ 
     const navigation = useNavigation()
 
+  
      return(
         <Container>
               <ImageBackground

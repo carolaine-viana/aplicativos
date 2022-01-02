@@ -4,39 +4,40 @@ import {View} from 'react-native';
 import {Alert} from 'react-native' 
 import * as Yup from 'yup';
 import { Button } from '../../../components/Button';
-import { ConfirmAnimation } from '../../../components/ConfirmAnimation';
 import { Input } from '../../../components/Input';
 import { PasswordInput } from '../../../components/PasswordInput';
-import { ConfirmSignUp } from '../../ConfirmSignUp';
-import { Container, Header, Title, SubTitle, Form, Footer} from './styles'
+import { Container, Header, Title, SubTitle, Form, Footer} from './styles';
+import auth from '@react-native-firebase/auth'
+import { useNavigation } from '@react-navigation/native';
 
-export function Register({navigation}){ 
-  const [username, setUsername] = useState('');
+export function Register(){ 
+  const navigation = useNavigation()
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
 
-  async function signUp() {
-    try {
+  async function handleSignUp(){
+    try{
+      //validacao  do yup
       const schema = Yup.object().shape({
-        username: Yup.string().email('deve ser um email').required('Username obrigatorio'),
-        email: Yup.string().email('Email invalido').required('Email obrigatorio'),
-        password: Yup.string().required('Senha obrigatoria'),
+        email: Yup.string().email('Email invalido!').required('email obrigatorio'),
+        password: Yup.string().required('senha obrigatoria')
       })
 
-      const data = {username, email, password}
+      const data = {email, password}
       await schema.validate(data)
 
-      await Auth.signUp({ username, password, attributes: { email} });
-      Alert.alert('✅ Sign-up Confirmed', 'Confirm your code');
-    } catch (error) { 
-      console.warn('❌ Error signing up...', error);
+      auth().createUserWithEmailAndPassword(email, password)
+      .then(() =>  Alert.alert('Criado com sucesso! ✅ '))
+    }catch(error: any){
       if(error instanceof Yup.ValidationError){
-        return Alert.alert('opa', error.message)
+        return Alert.alert('opa ❌ ', error.message)
+      }
+      if(error.code){
+        return Alert.alert(error.code)
       }
     }
   }
  
-
      return(
        <>
         <Container>
@@ -49,16 +50,6 @@ export function Register({navigation}){
            </SubTitle>
 
           <Form>
-          <Input
-              iconName="user"
-              placeholder="Username"
-              keyboardType="email-address"
-              autoCorrect={false}
-              autoCapitalize="none"
-              onChangeText={setUsername}
-              value={username}
-            />
-
             <Input
               iconName="mail"
               placeholder="E-mail"
@@ -85,15 +76,9 @@ export function Register({navigation}){
             <Form>
                 <Button
                   title="Register"
-                  onPress={signUp}
+                  onPress={handleSignUp}
                 />
 
-                  <Button
-                    title="Confirm my code"
-                    color="white"
-                    iconName="home"
-                    onPress={() => navigation.navigate('ConfirmSignUp', username)}
-                  />
             </Form>
           </Footer>
 

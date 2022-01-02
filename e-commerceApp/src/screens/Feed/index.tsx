@@ -20,6 +20,7 @@ import Jackets from '../../assets/svgs/jackets.svg'
 import News from '../../assets/svgs/news.svg'
 import Tops from '../../assets/svgs/tops.svg'
 import Pants from '../../assets/svgs/pants.svg'
+import { useNavigation } from '@react-navigation/native'
 
 export function Feed({navigation}) {
  
