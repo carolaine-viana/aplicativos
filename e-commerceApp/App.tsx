@@ -7,10 +7,11 @@ import { ThemeProvider } from 'styled-components';
 import theme from './src/styles/theme';
 
 import { Routes } from './src/routes';
+import { Feed } from './src/screens/Feed';
 
-import Amplify from 'aws-amplify';
-import config from './src/aws-exports';
-Amplify.configure(config);
+//import Amplify from 'aws-amplify';
+//import config from './src/aws-exports';
+//Amplify.configure(config);
 // import { withAuthenticator } from 'aws-amplify-react-native';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   
   return (
       <ThemeProvider theme={theme}>
-        <Routes/>
+        <Feed/>
     </ThemeProvider>
   )
 }
