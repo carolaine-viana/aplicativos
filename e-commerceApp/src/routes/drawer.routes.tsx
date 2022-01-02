@@ -1,50 +1,70 @@
-import React from 'react'
+import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { DetailProduct } from '../screens/DetailProduct';
 import { Feed } from '../screens/Feed';
 import { FilterClothes } from '../screens/FilterClothes';
-import { BuyNow } from '../screens/BuyNow';
-
-const {Navigator, Screen} = createDrawerNavigator();
+import { useWindowDimensions } from 'react-native';
+import { useTheme } from 'styled-components';
+const { Navigator, Screen } = createDrawerNavigator();
 
 export function MyDrawer() {
-  return (
-    <Navigator initialRouteName="Feed">
-         <Screen
-                name="Feed"
-                component={Feed}
-                options={{
-                    headerShown: false,
-                }}
-            />
-            <Screen
-                name="FilterClothes"
-                component={FilterClothes}
-                options={{
-                    headerShown: false,
-                }}
-            />
+	const dimensions = useWindowDimensions();
+	const isLargeScreen = dimensions.width >= 768;
+	const theme = useTheme();
 
-            <Screen
-                name="DetailProduct"
-                component={DetailProduct}
-                options={{
-                    headerShown: false,
+	return (
+		<Navigator
+			initialRouteName="Feed"
+			screenOptions={{
+                swipeEnabled: true,
+				drawerType: isLargeScreen ? 'slide' : 'front',
+				drawerStyle: isLargeScreen ? null : { width: '30%' },
+				overlayColor: 'transparent',
+				drawerStyle: {
+					backgroundColor: 'white'
+				},
+                drawerActiveTintColor: 'black',
+                drawerInactiveTintColor: 'red',
+                drawerLabelStyle: {
+                    fontSize: 20,
+                    color: 'black',
+                }
+			}}
+		>
+			<Screen
+				name="Feed"
+				component={Feed}
+				options={{
+					headerShown: false
+				}}
+
+                drawerIcon={{
+
                 }}
-            />
+               
+			/>
+			<Screen
+				name="Shopping"
+				component={FilterClothes}
+				options={{
+					headerShown: false
+				}}
+			/>
 
-            <Screen
-                name="BuyNow"
-                component={BuyNow}
-                options={{
-                    headerShown: false,
-                }}
-            />
+			<Screen
+				name="Profile"
+				component={FilterClothes}
+				options={{
+					headerShown: false
+				}}
+			/>
 
-              
-
-         
-    </Navigator>
-    
-  );
+			<Screen
+				name="Wish List"
+				component={FilterClothes}
+				options={{
+					headerShown: false
+				}}
+			/>
+		</Navigator>
+	);
 }
