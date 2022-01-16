@@ -7,7 +7,7 @@
             "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/ecommerceApp.app",
             "build": "xcodebuild -workspace ios/ecommerceApp.xcworkspace -scheme ecommerceApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
             "device": {
-                "type": "iPhone 12"
+                "type": "iPhone 11 Pro"
             }
         },
         "ios.sim.release": {
@@ -15,7 +15,7 @@
             "build": "export RCT_NO_LAUNCH_PACKAGER=true && xcodebuild -workspace ios/ecommerceApp.xcworkspace -UseNewBuildSystem=YES -scheme e-commerceApp -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
             "type": "ios.simulator",
             "device": {
-                "type": "iPhone 12"
+                "type": "iPhone 11 Pro"
             }
         }
     }
