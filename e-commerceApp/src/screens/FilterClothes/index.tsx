@@ -49,6 +49,25 @@ export function FilterClothes() {
   const [filteredClothes, setFilteredClothes] = useState<Data[]>([]);
   const navigation = useNavigation()
 
+
+  function getButtonFilter(Title: string){
+    switch(Title){
+        case 'All':
+            return handleFilterAll();
+        case 'Tops':
+            return handleFilterTops();
+        case 'Pants':
+            return handleFilterPants();
+        case 'Jackets':
+            return handleFilterJackets();
+        default:
+            return '';
+    }
+
+}
+
+  // console.log('oi', clothes.categoy.type)
+
   useEffect(() => {
     async function fetchClothes() {
       try {
@@ -116,11 +135,13 @@ export function FilterClothes() {
         />
       </ContainerInput>
 
+
       <ContainerButton>
+
             <ButtonFilter
               title="All"
               color="white"
-              onPress={() => handleFilterAll()}
+              onPress={() => getButtonFilter('All')}
             />
 
           <ButtonFilter

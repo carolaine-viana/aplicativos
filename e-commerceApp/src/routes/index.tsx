@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {MyDrawer} from './drawer.routes'
 import { AuthRoutes } from './auth.routes';
 import auth from '@react-native-firebase/auth'
+import { StackRoutes } from './routes';
 
 type User = {
    id: string;
@@ -15,15 +16,14 @@ export function Routes(){
    useEffect(() => {
       const subscriber = auth().onAuthStateChanged((userInfo: any) => {
          setUser(userInfo)
-         console.log('oiii', user)
       })
       return subscriber
    }, [])
 
      return(
         <NavigationContainer>
-           {user ? <MyDrawer/> : <AuthRoutes/>}
-          {/* <AuthRoutes/> */}
+           {/* {user ? <MyDrawer/> : <AuthRoutes/>} */}
+          <StackRoutes/>
         </NavigationContainer>
        )
 } 
