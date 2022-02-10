@@ -22,8 +22,8 @@ export function Routes(){
 
      return(
         <NavigationContainer>
-           {/* {user ? <MyDrawer/> : <AuthRoutes/>} */}
-          <StackRoutes/>
+           {user ? <MyDrawer/> : <AuthRoutes/>}
+          {/* <StackRoutes/> */}
         </NavigationContainer>
        )
 } 
