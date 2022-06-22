@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`notfound snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../src/assets/images/roadmap-not-found.png",
+      }
+    }
+  />
+  <Text
+    bold={true}
+    color="primary"
+    fallbackText=""
+    style={
+      Array [
+        Object {
+          "color": "#072AD8",
+          "fontFamily": "Rubik-Bold",
+          "fontSize": 16,
+          "lineHeight": 19,
+          "textTransform": "none",
+        },
+        Object {
+          "marginTop": 16,
+          "textAlign": "center",
+        },
+      ]
+    }
+    variant="lead"
+  >
+    Nenhum roteiro criado.
+    
+
+    Adicione clientes para
+    
+
+    criar o roteiro.
+  </Text>
+</View>
+`;

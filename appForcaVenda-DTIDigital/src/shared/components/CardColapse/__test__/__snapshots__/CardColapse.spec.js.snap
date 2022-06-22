@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardColapse snapshot 1`] = `
+<Vew
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingHorizontal": 16,
+    }
+  }
+  transition={
+    <Together>
+      <In
+        type="scale"
+      />
+      <Change
+        durationMs={400}
+      />
+      <Out
+        type="scale"
+      />
+    </Together>
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexGrow": 1,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "borderRadius": 17,
+          "flexGrow": 1,
+          "justifyContent": "center",
+          "marginBottom": 16,
+          "opacity": 1,
+          "paddingBottom": 24,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 12,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      />
+      <View
+        collapsable={false}
+        isOpen={false}
+        nativeID="animatedComponent"
+        style={
+          Object {
+            "height": 0,
+            "marginBottom": 12,
+            "marginLeft": 0,
+            "marginRight": 0,
+            "marginTop": 12,
+            "opacity": 1,
+            "width": 0,
+          }
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#072AD8",
+                "fontSize": 18,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Feather",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+</Vew>
+`;

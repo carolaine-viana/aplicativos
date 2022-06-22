@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "149935514596",
+    "project_id": "martinsgestaoforcavendas",
+    "storage_bucket": "martinsgestaoforcavendas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149935514596:android:05aec8a63e1c8d26459df1",
+        "android_client_info": {
+          "package_name": "com.martins_forcadevendas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149935514596-pdk2h90tgdc5othfp5id883g9gea3to0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArAk6gN61moAayhVLdI2Psr41xTxhUqzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149935514596-pdk2h90tgdc5othfp5id883g9gea3to0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

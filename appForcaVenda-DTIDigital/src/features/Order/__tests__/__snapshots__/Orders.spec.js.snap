@@ -1,0 +1,626 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be render OrderItem correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginTop": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        color="gray300"
+        fallbackText=""
+        size={11}
+        style={
+          Array [
+            Object {
+              "color": "#999DA9",
+              "fontFamily": "Rubik-Regular",
+              "fontSize": 11,
+              "lineHeight": 13,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="overline"
+      >
+        
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        color="default"
+        fallbackText=""
+        size={16}
+        style={
+          Array [
+            Object {
+              "color": "#10151D",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 16,
+              "lineHeight": 19,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="leadMedium"
+      >
+        Pedido: 
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        color="blue600"
+        fallbackText=""
+        size={14}
+        style={
+          Array [
+            Object {
+              "color": "#072AD8",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 14,
+              "lineHeight": 17,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="bodyMedium"
+      >
+        R$ 0,00
+      </Text>
+    </View>
+  </View>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#072AD8",
+          "fontSize": 24,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Feather",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`should be render Orders correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginTop": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        color="gray300"
+        fallbackText=""
+        size={11}
+        style={
+          Array [
+            Object {
+              "color": "#999DA9",
+              "fontFamily": "Rubik-Regular",
+              "fontSize": 11,
+              "lineHeight": 13,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="overline"
+      >
+        
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        color="default"
+        fallbackText=""
+        size={16}
+        style={
+          Array [
+            Object {
+              "color": "#10151D",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 16,
+              "lineHeight": 19,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="leadMedium"
+      >
+        Pedido: 
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        color="blue600"
+        fallbackText=""
+        size={14}
+        style={
+          Array [
+            Object {
+              "color": "#072AD8",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 14,
+              "lineHeight": 17,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="bodyMedium"
+      >
+        R$ 0,00
+      </Text>
+    </View>
+  </View>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#072AD8",
+          "fontSize": 24,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Feather",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`should be render Orders correctly 2`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginTop": 24,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flexDirection": "column",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        color="gray300"
+        fallbackText=""
+        size={11}
+        style={
+          Array [
+            Object {
+              "color": "#999DA9",
+              "fontFamily": "Rubik-Regular",
+              "fontSize": 11,
+              "lineHeight": 13,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="overline"
+      >
+        
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        color="default"
+        fallbackText=""
+        size={16}
+        style={
+          Array [
+            Object {
+              "color": "#10151D",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 16,
+              "lineHeight": 19,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="leadMedium"
+      >
+        Pedido: 
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "marginBottom": 4,
+          },
+        ]
+      }
+    >
+      <Text
+        color="blue600"
+        fallbackText=""
+        size={14}
+        style={
+          Array [
+            Object {
+              "color": "#072AD8",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 14,
+              "lineHeight": 17,
+              "textTransform": "none",
+            },
+          ]
+        }
+        variant="bodyMedium"
+      >
+        R$ 0,00
+      </Text>
+    </View>
+  </View>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "color": "#072AD8",
+          "fontSize": 24,
+        },
+        undefined,
+        Object {
+          "fontFamily": "Feather",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+        Object {},
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;
+
+exports[`should be render OrdersHeader correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "marginBottom": 8,
+      },
+    ]
+  }
+>
+  <Text
+    bold={true}
+    color="gray800"
+    fallbackText=""
+    style={
+      Array [
+        Object {
+          "color": "#19202D",
+          "fontFamily": "Rubik-Bold",
+          "fontSize": 14,
+          "lineHeight": 17,
+          "textTransform": "none",
+        },
+        Object {
+          "marginBottom": 12,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 12,
+        },
+      ]
+    }
+    variant="bodyMedium"
+  >
+     • 
+  </Text>
+  <Text
+    color="gray500"
+    fallbackText=""
+    style={
+      Array [
+        Object {
+          "color": "#6D7384",
+          "fontFamily": "Rubik-Regular",
+          "fontSize": 11,
+          "lineHeight": 13,
+          "textTransform": "none",
+        },
+        Object {
+          "fontSize": 12,
+          "marginBottom": 12,
+        },
+      ]
+    }
+    variant="overline"
+  >
+    NOME FANTASIA NÃO ENCONTRADO
+  </Text>
+  <Text
+    color="default"
+    fallbackText=""
+    style={
+      Array [
+        Object {
+          "color": "#10151D",
+          "fontFamily": "Rubik-Regular",
+          "fontSize": 11,
+          "lineHeight": 13,
+          "textTransform": "none",
+        },
+        Object {
+          "fontSize": 12,
+          "marginBottom": 12,
+        },
+      ]
+    }
+    variant="overline"
+  >
+    
+  </Text>
+</View>
+`;

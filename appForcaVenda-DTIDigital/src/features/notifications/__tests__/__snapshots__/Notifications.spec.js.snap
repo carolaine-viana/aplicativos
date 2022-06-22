@@ -1,0 +1,1020 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should be render Notifications ModalNotification 1`] = `
+<View
+  customStyles={
+    Object {
+      "backdropColor": "rgba(0,0,0,0.7)",
+      "modalBorderRadius": 4,
+      "positionTop": 0,
+    }
+  }
+  style={
+    Array [
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "transparent",
+        "height": 1334,
+        "justifyContent": "center",
+        "paddingBottom": 0,
+        "paddingLeft": 20,
+        "paddingRight": 20,
+        "paddingTop": 0,
+        "position": "relative",
+        "top": 0,
+        "width": "100%",
+        "zIndex": 3,
+      },
+    ]
+  }
+>
+  <View
+    collapsable={false}
+    nativeID="animatedComponent"
+    style={
+      Object {
+        "transform": Array [
+          Object {
+            "scale": 0,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "flex-end",
+            "marginBottom": 10,
+            "marginLeft": -10,
+            "marginRight": -10,
+            "marginTop": 0,
+            "zIndex": 5,
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#3289FF",
+              "borderRadius": 23,
+              "height": 46,
+              "justifyContent": "center",
+              "position": "absolute",
+              "width": 46,
+            },
+          ]
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#fff",
+                "fontSize": 26,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Feather",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      customStyles={
+        Object {
+          "backdropColor": "rgba(0,0,0,0.7)",
+          "modalBorderRadius": 4,
+          "positionTop": 0,
+        }
+      }
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#fff",
+            "borderRadius": 30,
+            "elevation": 20,
+            "paddingBottom": 16,
+            "paddingLeft": 16,
+            "paddingRight": 16,
+            "paddingTop": 16,
+            "zIndex": 4,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "flex-end",
+              "width": "100%",
+            },
+          ]
+        }
+      />
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "minHeight": 200,
+                "paddingBottom": 117,
+                "paddingLeft": 57,
+                "paddingRight": 57,
+                "paddingTop": 117,
+              },
+            ]
+          }
+        >
+          <Text
+            color="primary"
+            fallbackText=""
+            style={
+              Array [
+                Object {
+                  "color": "#072AD8",
+                  "fontFamily": "Rubik-Medium",
+                  "fontSize": 24,
+                  "lineHeight": 28,
+                  "textTransform": "none",
+                },
+                Object {
+                  "marginBottom": 14,
+                },
+              ]
+            }
+            variant="titleLarge"
+          >
+            Title
+          </Text>
+          <Text
+            color="default"
+            fallbackText=""
+            numberOfLines={2}
+            size={14}
+            style={
+              Array [
+                Object {
+                  "color": "#10151D",
+                  "fontFamily": "Rubik-Regular",
+                  "fontSize": 14,
+                  "lineHeight": 13,
+                  "textTransform": "none",
+                },
+                Object {},
+              ]
+            }
+            variant="overline"
+          >
+            Title Title Title Title Title Title Title Title Title Title Title Title Title Title Title Title Title Title
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`should be render Notifications NotificationDetails 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "",
+          "height": "px",
+          "zIndex": 3,
+        },
+      ]
+    }
+    translucent={true}
+  />,
+  <View
+    backgroundColor="default"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "flexDirection": "row",
+          "height": 49,
+          "justifyContent": "space-between",
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+          "shadowColor": "grey",
+          "shadowOffset": Object {
+            "height": 1.5,
+            "width": 1.5,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 1.5,
+          "width": "100%",
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "left": 0,
+            "zIndex": 2,
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "height": 36,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 36,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#072AD8",
+                "fontSize": 24,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Feather",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <Text
+      bold={true}
+      color="gray400"
+      fallbackText=""
+      size={18}
+      style={
+        Array [
+          Object {
+            "color": "#838896",
+            "fontFamily": "Rubik-Bold",
+            "fontSize": 18,
+            "lineHeight": 28,
+            "textTransform": "none",
+          },
+          Object {
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="header"
+    >
+      Notificações
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "right": 0,
+          },
+        ]
+      }
+    />
+  </View>,
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 30,
+        },
+      ]
+    }
+  >
+    <Text
+      color="gray600"
+      fallbackText=""
+      size={18}
+      style={
+        Array [
+          Object {
+            "color": "#595F70",
+            "fontFamily": "Rubik-Medium",
+            "fontSize": 18,
+            "lineHeight": 17,
+            "textTransform": "none",
+          },
+          Object {
+            "lineHeight": 22,
+            "marginBottom": 12,
+          },
+        ]
+      }
+      variant="bodyMedium"
+    >
+      
+    </Text>
+    <Text
+      color="gray700"
+      fallbackText=""
+      size={11}
+      style={
+        Array [
+          Object {
+            "color": "#3A4050",
+            "fontFamily": "Rubik-Regular",
+            "fontSize": 11,
+            "lineHeight": 13,
+            "textTransform": "none",
+          },
+          Object {
+            "lineHeight": 13,
+            "marginBottom": 38,
+          },
+        ]
+      }
+      variant="overline"
+    >
+      
+    </Text>
+  </View>,
+]
+`;
+
+exports[`should be render Notifications NotificationItem 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Array [
+      Object {
+        "paddingBottom": 24,
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "paddingTop": 24,
+      },
+    ]
+  }
+>
+  <Text
+    color="gray700"
+    fallbackText=""
+    size={14}
+    style={
+      Array [
+        Object {
+          "color": "#3A4050",
+          "fontFamily": "Rubik-Medium",
+          "fontSize": 14,
+          "lineHeight": 17,
+          "textTransform": "none",
+        },
+        Object {
+          "lineHeight": 17,
+          "marginBottom": 8,
+        },
+      ]
+    }
+    variant="bodyMedium"
+  >
+    Titulo
+  </Text>
+  <Text
+    color="gray700"
+    fallbackText=""
+    numberOfLines={2}
+    size={11}
+    style={
+      Array [
+        Object {
+          "color": "#3A4050",
+          "fontFamily": "Rubik-Regular",
+          "fontSize": 11,
+          "lineHeight": 13,
+          "textTransform": "none",
+        },
+        Object {
+          "lineHeight": 13,
+          "marginBottom": 8,
+        },
+      ]
+    }
+    variant="overline"
+  >
+    Descriçao
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "marginBottom": -8,
+        },
+      ]
+    }
+  >
+    <Text
+      color="gray300"
+      fallbackText=""
+      size={9}
+      style={
+        Array [
+          Object {
+            "color": "#999DA9",
+            "fontFamily": "Rubik-Regular",
+            "fontSize": 9,
+            "lineHeight": 28,
+            "textTransform": "none",
+          },
+          Object {
+            "marginRight": 8,
+          },
+        ]
+      }
+      variant="header"
+    >
+      01/09/2022
+    </Text>
+    <Text
+      color="gray300"
+      fallbackText=""
+      size={9}
+      style={
+        Array [
+          Object {
+            "color": "#999DA9",
+            "fontFamily": "Rubik-Regular",
+            "fontSize": 9,
+            "lineHeight": 28,
+            "textTransform": "none",
+          },
+          Object {},
+        ]
+      }
+      variant="header"
+    >
+      15h
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "marginLeft": 6,
+          },
+        ]
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        style={
+          Array [
+            Object {
+              "color": "#3289FF",
+              "fontSize": 12,
+            },
+            undefined,
+            Object {
+              "fontFamily": "Feather",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            Object {},
+          ]
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+  <View
+    noMarge={false}
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "marginTop": 16,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      color="blue100"
+      style={
+        Array [
+          Object {
+            "borderBottomColor": "#B3D3FF",
+            "borderBottomWidth": 1,
+            "width": "100%",
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`should be render Notifications correctly 1`] = `
+Array [
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "",
+          "height": "px",
+          "zIndex": 3,
+        },
+      ]
+    }
+    translucent={true}
+  />,
+  <View
+    backgroundColor="default"
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#fff",
+          "flexDirection": "row",
+          "height": 49,
+          "justifyContent": "space-between",
+          "paddingBottom": 0,
+          "paddingLeft": 16,
+          "paddingRight": 16,
+          "paddingTop": 0,
+          "shadowColor": "grey",
+          "shadowOffset": Object {
+            "height": 1.5,
+            "width": 1.5,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 1.5,
+          "width": "100%",
+          "zIndex": 2,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "left": 0,
+            "zIndex": 2,
+          },
+        ]
+      }
+    >
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "height": 36,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 36,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": "#072AD8",
+                "fontSize": 24,
+              },
+              undefined,
+              Object {
+                "fontFamily": "Feather",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <Text
+      bold={true}
+      color="gray400"
+      fallbackText=""
+      size={18}
+      style={
+        Array [
+          Object {
+            "color": "#838896",
+            "fontFamily": "Rubik-Bold",
+            "fontSize": 18,
+            "lineHeight": 28,
+            "textTransform": "none",
+          },
+          Object {
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "textAlign": "center",
+          },
+        ]
+      }
+      variant="header"
+    >
+      Notificações
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "right": 0,
+          },
+        ]
+      }
+    >
+      <View
+        collapsable={false}
+        color="gray200"
+        isSearchVisible={false}
+        nativeID="animatedComponent"
+        style={
+          Object {
+            "backgroundColor": "#D3D5DA",
+            "borderRadius": 30,
+            "height": 36,
+            "width": 40,
+          }
+        }
+      >
+        <TextInput
+          onChangeText={[Function]}
+          placeholder="Buscar Notificação"
+          placeholderTextColor="#595F70"
+          style={
+            Array [
+              Object {
+                "color": "#000",
+                "flexBasis": 0,
+                "flexGrow": 1,
+                "flexShrink": 1,
+                "marginLeft": 20,
+                "marginRight": 60,
+              },
+            ]
+          }
+          testID="searchTextIpt"
+          value=""
+        />
+      </View>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderRadius": 30,
+            "height": 36,
+            "justifyContent": "center",
+            "opacity": 1,
+            "position": "absolute",
+            "right": 6,
+            "width": 36,
+          }
+        }
+      >
+        <Text
+          allowFontScaling={false}
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 12,
+              },
+              Array [
+                Object {
+                  "color": "#072AD8",
+                  "fontSize": 24,
+                },
+              ],
+              Object {
+                "fontFamily": "Feather",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              Object {},
+            ]
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>,
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "paddingBottom": 24,
+            "paddingLeft": 24,
+            "paddingRight": 24,
+            "paddingTop": 24,
+          },
+        ]
+      }
+    >
+      <Text
+        color="gray700"
+        fallbackText=""
+        size={14}
+        style={
+          Array [
+            Object {
+              "color": "#3A4050",
+              "fontFamily": "Rubik-Medium",
+              "fontSize": 14,
+              "lineHeight": 17,
+              "textTransform": "none",
+            },
+            Object {
+              "lineHeight": 17,
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant="bodyMedium"
+      >
+        AQUI é o TITLE
+      </Text>
+      <Text
+        color="gray700"
+        fallbackText=""
+        numberOfLines={2}
+        size={11}
+        style={
+          Array [
+            Object {
+              "color": "#3A4050",
+              "fontFamily": "Rubik-Regular",
+              "fontSize": 11,
+              "lineHeight": 13,
+              "textTransform": "none",
+            },
+            Object {
+              "lineHeight": 13,
+              "marginBottom": 8,
+            },
+          ]
+        }
+        variant="overline"
+      >
+        Descrição Descrição Descrição Descrição Descrição Descrição Descrição Descrição DescriçãoDescrição Descrição Descrição Descrição Descrição Descrição Descrição
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginBottom": -8,
+            },
+          ]
+        }
+      >
+        <Text
+          color="gray300"
+          fallbackText=""
+          size={9}
+          style={
+            Array [
+              Object {
+                "color": "#999DA9",
+                "fontFamily": "Rubik-Regular",
+                "fontSize": 9,
+                "lineHeight": 28,
+                "textTransform": "none",
+              },
+              Object {
+                "marginRight": 8,
+              },
+            ]
+          }
+          variant="header"
+        >
+          01/09/2022
+        </Text>
+        <Text
+          color="gray300"
+          fallbackText=""
+          size={9}
+          style={
+            Array [
+              Object {
+                "color": "#999DA9",
+                "fontFamily": "Rubik-Regular",
+                "fontSize": 9,
+                "lineHeight": 28,
+                "textTransform": "none",
+              },
+              Object {},
+            ]
+          }
+          variant="header"
+        >
+          15:00h
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "marginLeft": 6,
+              },
+            ]
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            style={
+              Array [
+                Object {
+                  "color": "#3289FF",
+                  "fontSize": 12,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "Feather",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+                Object {},
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+      <View
+        noMarge={false}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "marginTop": 16,
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          color="blue100"
+          style={
+            Array [
+              Object {
+                "borderBottomColor": "#B3D3FF",
+                "borderBottomWidth": 1,
+                "width": "100%",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>,
+]
+`;
